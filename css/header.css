@@ -1,0 +1,512 @@
+/* css/header.css - Refactored for original look and transparency effect */
+
+/* Header Styles */
+:root {
+    --header-background: #292929;
+      --header-text-color: white;
+    --link-hover-color: orange; 
+  --search-overlay-background: rgba(0, 0, 0, 0.7); 
+  --body-background: #f8f9fa;
+  }
+
+/* Header Block - Fixed position and initial transparent background */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    background: transparent; /* Initial transparent background */
+    transition: background-color 0.5s ease; /* Smooth background color transition */
+}
+
+/* Header Block - Solid background when scrolled (using .nav-fixed class) */
+.header.nav-fixed {
+    background-color: var(--header-background); /* Solid background color when scrolled */
+    padding: 10px 0; /* Add padding when solid */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Add shadow when solid */
+}
+
+
+/* Header Container Element */
+.header__container {
+    padding: 10px 0;
+}
+
+.header .header__container.menu-open {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* Header Navbar Element */
+.header__navbar {
+    padding: 0;
+}
+
+/* Header Logo Block */
+.header__logo {
+    margin-bottom: 0;
+}
+
+/* Header Logo Link Element */
+.header__logo-link {
+    color: var(--header-text-color); /* White color for logo text - CSS Variable */
+    font-size: 1.5rem; /* Larger font size for logo */
+    font-weight: 600;
+    text-decoration: none;
+}
+
+/* Header Logo Icon Element */
+.header__logo-icon {
+    font-size: 1.2rem;
+    margin-right: 5px;
+}
+
+/* Header Logo Slogan Element */
+.header__logo-slogan {
+    font-size: 0.8rem; /* Slightly larger slogan */
+    margin-left: 5px;
+    display: block;
+    color: rgba(255, 255, 255, 0.8); /* Lighter slogan color */
+}
+
+/* Header Navigation Toggler Element - */
+.header__nav-toggler {
+    border-color: var(--header-text-color);
+    background: transparent;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0;
+    height: 2.5rem;
+    width: 2.5rem;
+    line-height: normal;
+    border-radius: 0.5rem;
+}
+
+/* Header Navigation Toggler Icon Element - re padding and line-height */
+.header__nav-toggler-icon {
+    background-image: none;
+    color: var(--header-text-color);
+    display: inline-block;
+    padding: 0.2em 0.6em;
+    line-height: 1;
+    width: auto; /* THÊM width: auto; */
+}
+
+/* Header Navigation Toggler Icon - Expand Icon (Bars) */
+.header__nav-toggler-icon.fa.icon-expand {
+    display: inline-block; /* Show expand icon by default (for collapsed state) */
+}
+
+/* Header Navigation Toggler Icon - Close Icon (Times) */
+.header__nav-toggler-icon.fa.icon-close {
+    display: none;          /* Hide close icon by default (for collapsed state) */
+}
+
+/* Header Navigation Toggler - Collapsed State Modifier - Icon Expand (Bars) */
+.header__nav-toggler.collapsed > .header__nav-toggler-icon.fa.icon-expand {
+    display: inline-block; /* Show expand icon when toggler is collapsed */
+}
+
+/* Header Navigation Toggler - Collapsed State Modifier - Icon Close (Times) */
+.header__nav-toggler.collapsed > .header__nav-toggler-icon.fa.icon-close {
+    display: none;          /* Hide close icon when toggler is collapsed */
+}
+
+/* Header Navigation Toggler - NOT Collapsed State Modifier (Expanded) - Icon Expand (Bars) */
+.header__nav-toggler:not(.collapsed) > .header__nav-toggler-icon.fa.icon-expand {
+    display: none;          /* Hide expand icon when toggler is NOT collapsed (expanded) */
+}
+
+/* Header Navigation Toggler - NOT Collapsed State Modifier (Expanded) - Icon Close (Times) */
+.header__nav-toggler:not(.collapsed) > .header__nav-toggler-icon.fa.icon-close {
+    display: inline-block; /* Show close icon when toggler is NOT collapsed (expanded) */
+}
+
+/* Header Navigation Menu Element */
+.header__nav-menu {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+}
+
+/* Header Navigation Item Element */
+.header__nav-item {
+    margin-left: 25px; /* Wider spacing between menu items */
+}
+
+/* Header Navigation Link Element */
+.header__nav-link {
+    color: var(--header-text-color); /* White color for nav links - CSS Variable */
+    font-weight: 400;
+    text-decoration: none;
+    font-size: 1.1rem; /* Slightly larger nav links */
+}
+
+/* Header Navigation Link - Active State Modifier */
+.header__nav-link.active,
+.header__nav-link:hover {
+    color: var(--link-hover-color); /* Orange color for active/hover state - CSS Variable */
+}
+
+
+/* Header Navigation Dropdown Element */
+.header__nav-dropdown {
+    background-color: #343a40;
+    border: 1px solid #000;
+}
+
+/* Header Navigation Dropdown Item Element */
+.header__nav-dropdown-item {
+    color: var(--header-text-color); /* White color for dropdown items - CSS Variable */
+    font-weight: 400;
+}
+
+/* Header Navigation Dropdown Item - Hover State Modifier */
+.header__nav-dropdown-item:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+
+/* Header Search Block */
+.header__search {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+}
+
+/* Header Search Control Element */
+.header__search-control {
+    position: relative;
+}
+
+/* Header Search Button Element */
+.header__search-btn {
+    position: relative;
+    cursor: pointer;
+    font-size: 1.2em;
+    color: var(--header-text-color); /* White color for icon - CSS Variable */
+    display: inline-block;
+}
+
+/* Header Search Icon Element */
+.header__search-icon {
+    font-size: 1.2em;
+}
+
+/* Header Search Close Icon Element */
+.header__search-close-icon {
+    font-size: 2.5rem;
+    color: var(--header-text-color); /* White color for icon - CSS Variable */
+    position: absolute;
+    top: 50%;
+    right: -10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s ease-in-out;
+}
+
+/* Header Search - Active State Modifier */
+.header__search.active .header__search-close-icon {
+    opacity: 1;
+    visibility: visible;
+    right: 15px;
+}
+
+/* Header Search Form Element */
+.header__search-form {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 50px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s ease-in-out;
+}
+
+/* Header Search Input Field Element */
+.header__search-input-field {
+    font-size: 1rem;
+    width: 280px;
+    border: none;
+    background-color: transparent !important; /* Transparent background - IMPORTANT! */
+    color: var(--header-text-color); /* White text color - CSS Variable */
+    border-bottom: 1px solid var(--header-text-color); /* White bottom border - CSS Variable */
+    outline: none;
+    padding: 10px 15px;
+}
+
+
+/* Header Search - Active State Modifier */
+.header__search.active .header__search-form {
+    opacity: 1;
+    visibility: visible;
+    right: 50px;
+}
+
+/* Search Active Body Modifier */
+.search-active .header__search {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--search-overlay-background); /* Semi-transparent black - CSS Variable */
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Search Active Body Modifier - Header Search Close Icon Element */
+.search-active .header__search .header__search-close-icon {
+    right: 15px;
+}
+
+/* Search Active Body Modifier - Header Search Form Element */
+.search-active .header__search .header__search-form {
+    right: 50px;
+}
+
+/* Search Active Body Modifier - Header Search Input Field Element */
+.search-active .header__search .header__search-input-field::placeholder {
+    color: var(--header-text-color); /* White placeholder text - CSS Variable */
+}
+
+
+/* Theme Switcher Block */
+.header__theme-switcher {
+    margin-left: 20px;
+    position: relative; /* Position relative for theme switcher */
+}
+
+.header__theme-switch-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.header__theme-switch {
+    display: inline-block;
+    height: 26px;
+    position: relative;
+    width: 50px;
+}
+
+.header__theme-switch input {
+    display: none;
+}
+
+.header__theme-mode-container {
+    background-color: transparent; /* Transparent background for theme mode container */
+    bottom: 0;
+    cursor: pointer;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 34px;
+    border: 2px solid rgba(255, 255, 255, 0.3); /* Light border for theme mode container */
+}
+
+.header__theme-mode-container::before {
+    background-color: var(--header-text-color); /* White handle color - CSS Variable */
+    bottom: 4px;
+    content: "";
+    left: 4px;
+    position: absolute;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 50%;
+    height: 16px;
+    width: 16px;
+}
+
+.header__theme-switch input:checked + .header__theme-mode-container {
+    background-color: transparent; /* Transparent background when checked */
+    border: 2px solid var(--header-background); /* Dark border when checked - CSS Variable */
+}
+
+.header__theme-switch input:checked + .header__theme-mode-container::before {
+    -webkit-transform: translateX(24px);
+    transform: translateX(24px);
+    background-color: var(--header-background); /* Dark handle color when checked - CSS Variable */
+}
+
+.header__theme-switch .header__theme-mode-icon {
+    position: absolute;
+    top: 4px;
+    font-size: 14px;
+    opacity: 1;
+    -webkit-transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.header__theme-switch .gg-sun {
+    left: 5px;
+    color: var(--header-text-color); /* White color for sun icon - CSS Variable */
+}
+
+.header__theme-switch .gg-moon {
+    right: 5px;
+    left: auto;
+    opacity: 0;
+    color: var(--header-background); /* Dark color for moon icon - CSS Variable */
+}
+
+.header__theme-switch input:checked + .header__theme-mode-container .header__theme-mode-icon.gg-sun {
+    opacity: 0;
+}
+
+.header__theme-switch input:checked + .header__theme-mode-container .header__theme-mode-icon.gg-moon {
+    opacity: 1;
+}
+
+.header__theme-mode-container:hover {
+    opacity: 0.8;
+}
+
+#site-header .navbar-dark .navbar-toggler {
+    border-color: var(--header-text-color); /* White border color - CSS Variable */
+}
+
+#site-header .navbar-dark .navbar-toggler-icon {
+    background-image: none;
+}
+
+
+/* Responsive Styles for Header - Example for screens smaller than 992px (Bootstrap 'lg' breakpoint) */
+@media (max-width: 991px) {
+    .header__nav-collapse.show {
+        display: block !important; /* Ghi đè Bootstrap */
+    }
+
+    /* Header Navigation Collapse Element - Styles when navbar is collapsed */
+    .header__nav-collapse {
+        background-color: transparent; /* Dark background for collapsed menu - CSS Variable */
+        text-align: center;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    /* Header Block - Semi-transparent background when mobile menu is open */
+    .header.active { /* Apply to header when it has 'active' class (toggled by JS) */
+        background-color: rgba(13, 19, 38, 0.7); /* Semi-transparent dark background (70% opacity) */
+    }
+
+    /* Header Navigation Menu Element - Styles for collapsed menu */
+    .header__nav-menu {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    /* Header Navigation Item Element - Styles for collapsed menu items */
+    .header__nav-item {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    /* Header Theme Switcher Block - Styles for collapsed menu */
+    .header__theme-switcher {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    /* Header Search Block - Styles for collapsed menu */
+    .header__search {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+}
+
+/* CSS for gg-sun and gg-moon icons from css.gg library - ADDED RULES */
+
+/* Common styles for both gg-sun and gg-moon */
+.gg-sun::after,
+.gg-moon::after {
+    display: block;
+    box-sizing: border-box;
+    border-radius: 50%;
+}
+
+/* Styles for gg-sun icon */
+.gg-sun {
+    overflow: hidden;
+    border: 2px solid;
+    position: relative;
+    display: block;
+    transform: scale(var(--ggs,1));
+    width: var(--ggs,1em);
+    height: var(--ggs,1em);
+    border-radius: 50%;
+}
+
+.gg-sun::before {
+    content: "";
+    width: var(--ggs,1em);
+    height: var(--ggs,1em);
+    border: 2px solid;
+    box-shadow: 0 0 0 2px;
+    position: absolute;
+    border-radius: 50%;
+    top: 0;
+    left: 0;
+    box-sizing: border-box
+}
+
+.gg-sun::after {
+    content: "";
+    position: absolute;
+    border-width: 0 6.9px;
+    border-style: solid;
+    border-color: transparent;
+    top: -5px;
+    left: -5px;
+    width: var(--ggs,1em);
+    height: var(--ggs,1em);
+    transform: rotate(45deg);
+    box-sizing: border-box
+}
+
+
+/* Styles for gg-moon icon */
+.gg-moon {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    transform: scale(var(--ggs,1));
+    width: var(--ggs,1em);
+    height: var(--ggs,1em);
+    border: 2px solid transparent;
+    border-radius: 50%;
+    box-shadow: 0 0 0 2px;
+    overflow: hidden
+}
+
+.gg-moon::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 2px solid var(--header-background); /* Border color for moon - CSS Variable */
+    background: var(--body-background); /* Background color for moon - CSS Variable */
+    border-radius: 50%;
+    width: 1em;
+    height: 1em;
+    box-sizing: border-box;
+    box-shadow: 0 0 0 5px var(--body-background); /* Shadow for moon - CSS Variable */
+}
+
+/* Header Block - Darker background when mobile menu is ACTIVE (using .nav-active class) */
+.header.nav-active {
+    background-color: rgba(0, 0, 0, 0.9); /* Semi-transparent dark background when menu is active */
+}

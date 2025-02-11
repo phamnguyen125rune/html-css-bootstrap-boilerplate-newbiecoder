@@ -1,0 +1,45 @@
+/* css/main.css */
+
+/* CSS Variables for Theme (Light Theme - Default) - MUST BE AT THE TOP */
+:root {
+    --body-background: #fff;          /* Màu nền body (sáng) */
+    --text-color: #333;              /* Màu chữ chính (tối) */
+    --header-background: #0d1326;     /* Màu nền header (tối) */
+    --header-text-color: #fff;         /* Màu chữ header (sáng) */
+    --link-color: #0d1326;           /* Màu liên kết (tối) */
+    --link-hover-color: #ff6900;       /* Màu liên kết khi hover (cam) */
+    --footer-background: #f8f9fa;     /* Màu nền footer (xám nhạt) */
+    --footer-text-color: #777;         /* Màu chữ footer (xám trung bình) */
+    --footer-copyright-background: #191c20; /* Màu nền copyright footer (tối hơn) */
+    --footer-copyright-text-color: rgba(255, 255, 255, 0.8); /* Màu chữ copyright footer (xám nhạt) */
+    --card-background: #fff;          /* Màu nền card/box (trắng) */
+    --card-box-shadow: 0 0 20px rgba(0, 0, 0, 0.08); /* Bóng đổ nhẹ cho card/box */
+    --card-box-shadow-hover: 0 0 30px rgba(0, 0, 0, 0.15); /* Bóng đổ đậm hơn khi hover card/box */
+    --input-background: #fff;         /* Màu nền input (trắng) */
+    --input-border-color: #ced4da;    /* Màu viền input (xám nhạt) */
+    --input-text-color: #495057;      /* Màu chữ input (xám đậm) */
+    --input-placeholder-color: #6c757d; /* Màu placeholder input (xám trung bình) */
+    --search-overlay-background: rgba(0,0,0,0.8); /* Màu nền overlay tìm kiếm (đen mờ) */
+}
+
+/* Dark Theme Styles - Applied when body.dark-mode class is present */
+body.dark-mode {
+    --body-background: #121212;
+    --text-color: #eee;
+    --header-background: #212121;
+    --header-text-color: #fff;
+    --link-color: #eee;
+    --link-hover-color: #ffab40;
+    --footer-background: #333;
+    --footer-text-color: #ccc;
+    --footer-copyright-background: #000;
+    --footer-copyright-text-color: #ddd;
+    --card-background: #333;
+    --card-box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+    --card-box-shadow-hover: 0 0 30px rgba(255, 255, 255, 0.2);
+    --input-background: #444;
+    --input-border-color: #666;
+    --input-text-color: #eee;
+    --input-placeholder-color: #ccc;
+    --search-overlay-background: rgba(0,0,0,0.95);
+}

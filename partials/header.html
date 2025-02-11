@@ -1,0 +1,83 @@
+<header id="site-header" class="header fixed-top">  <!-- Header - Fixed to top -->
+    <div class="header__container container"> <!-- Header Container - Bootstrap container -->
+        <nav class="header__navbar navbar navbar-expand-lg navbar-dark stroke"> <!-- Header Navbar - Bootstrap navbar, dark theme, stroke style -->
+
+            <!-- Header Logo -->
+            <h1 class="header__logo navbar-brand"> <!-- Header Logo - Bootstrap navbar-brand for styling -->
+                <a href="../pages/home/index.html" class="header__logo-link text-decoration-none"> <!-- Header Logo Link - No text decoration, link to homepage -->
+                    <span class="header__logo-icon fa fa-align-right"></span> <!-- Header Logo Icon -->
+                    <span class="header__logo-text">File Nháp 2</span> <!-- Header Logo Text - Project name "File Nháp 2" -->
+                    <span class="header__logo-slogan d-block small">Vision to your Future</span> <!-- Header Logo Slogan - Display block on small screens, small text -->
+                </a>
+            </h1>
+            <!-- End Header Logo -->
+
+            <!-- Navbar Toggler Button for Mobile -->
+            <button class="header__nav-toggler navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#headerNavbarContent" aria-controls="headerNavbarContent" aria-expanded="false" aria-label="Toggle navigation"> <!-- Header Navigation Toggler - Bootstrap navbar-toggler for mobile menu -->
+                <span class="header__nav-toggler-icon navbar-toggler-icon fa icon-expand fa-bars"></span> <!-- Toggler Icon - Bars -->
+                <span class="header__nav-toggler-icon navbar-toggler-icon fa icon-close fa-times"></span> <!-- Toggler Icon - Close -->
+            </button>
+            <!-- End Navbar Toggler Button for Mobile -->
+
+            <!-- Navigation Links - Collapsible Area -->
+            <div class="header__nav-collapse collapse navbar-collapse" id="headerNavbarContent">  <!-- Header Navigation Collapse - Bootstrap navbar-collapse for collapsible menu -->
+                <ul class="header__nav-menu navbar-nav ms-lg-auto mb-2 mb-lg-0"> <!-- Header Navigation Menu - Bootstrap navbar-nav, auto margin on large screens -->
+                    <li class="header__nav-item nav-item"> <!-- Navigation Item - Bootstrap nav-item -->
+                        <a class="header__nav-link nav-link active" aria-current="page" href="../pages/home/index.html">Home</a> <!-- Navigation Link - Bootstrap nav-link, active state for current page -->
+                    </li>
+                    <li class="header__nav-item nav-item">
+                        <a class="header__nav-link nav-link" href="../pages/about/index.html">About</a>
+                    </li>
+                    <li class="header__nav-item nav-item">
+                        <a class="header__nav-link nav-link" href="../pages/services/index.html">Services</a>
+                    </li>
+                    <li class="header__nav-item nav-item dropdown"> <!-- Dropdown Navigation Item - Bootstrap dropdown -->
+                        <a class="header__nav-link nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> <!-- Dropdown Link - Bootstrap dropdown-toggle -->
+                            Pages
+                        </a>
+                        <ul class="header__nav-dropdown dropdown-menu" aria-labelledby="pagesDropdown"> <!-- Dropdown Menu - Bootstrap dropdown-menu -->
+                            <li><a class="header__nav-dropdown-item dropdown-item" href="../pages/home/back.html">Blog Posts</a></li> <!-- Dropdown Item - Bootstrap dropdown-item -->
+                            <li><a class="header__nav-dropdown-item dropdown-item" href="../pages/home/back.html">404 page</a></li>
+                            <li><a class="header__nav-dropdown-item dropdown-item" href="../pages/home/back.html">Landing page</a></li>
+                            <li><a class="header__nav-dropdown-item dropdown-item" href="../pages/home/back.html">Elements page</a></li>
+                        </ul>
+                    </li>
+                    <li class="header__nav-item nav-item">
+                        <a class="header__nav-link nav-link" href="../pages/contact/index.html">Contact</a>
+                    </li>
+                </ul>
+                <!-- End Navigation Links -->
+
+                <!-- Search Section -->
+                <div class="header__search ms-lg-3 HeaderSearch">
+                    <div class="header__search-control control me-3" id="search-btn"> 
+                        <div class="header__search-btn btn-material">
+                            <i class="header__search-icon fa fa-search icon-material-search"></i>
+                        </div>
+                    </div>
+                    <i class="header__search-close-icon icon-close fa fa-close material-icons"></i>
+                    <form class="header__search-form search-input collapse" action="#" method="GET" id="searchForm">
+                    <input class="header__search-input-field form-control input-search" type="search" placeholder="Start Typing..." aria-label="Search">
+                    </form>
+                </div>
+                <!-- End Search Section -->
+
+                <!-- toggle switch for light and dark theme -->
+                <div class="header__theme-switcher mobile-position text-center DarkandLight">
+                    <nav class="header__theme-navigation navigation">
+                        <div class="header__theme-switch-wrapper theme-switch-wrapper">
+                            <label class="header__theme-switch theme-switch" for="darkModeSwitch">
+                                <input type="checkbox" class="header__theme-checkbox" id="darkModeSwitch">
+                                <i class="header__theme-mode-icon gg-sun"></i>
+                                <i class="header__theme-mode-icon gg-moon"></i>
+                            </label>
+                        </div>
+                    </nav>
+                </div>
+                <!-- //toggle switch for light and dark theme -->
+
+            </div>
+            <!-- End Navigation Links - Collapsible Area -->
+        </nav>
+    </div>
+</header>

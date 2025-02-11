@@ -1,0 +1,165 @@
+/* Footer 29 Styles - Refactored for better visual appearance and closer to original */
+.w3l-footer-29-main {
+    position: relative;
+    z-index: 1;
+}
+
+.footer-29 {
+    background-color: #23272b;
+    padding: 5rem 0; /* Padding top and bottom for footer section */
+}
+
+.footer-29 .footer-top-29 {
+    border-bottom: 1px solid rgba(208, 211, 215, 0.17); /* Light border bottom for top footer area */
+    padding-bottom: 40px; /* Padding bottom for top footer area */
+}
+
+.footer-29 .footer-logo a {
+    font-weight: 700;        /* Bold font weight for logo */
+    font-size: 28px;        /* Larger font size for logo */
+    color: #fff;            /* White color for logo text */
+    display: flex;          /* Flexbox for logo and slogan alignment */
+    align-items: baseline;   /* Align items along baseline */
+}
+
+.footer-29 .footer-logo span {
+    font-size: 18px;        /* Smaller font size for slogan */
+    font-weight: 400;        /* Normal font weight for slogan */
+    color: #666;            /* Gray color for slogan */
+    line-height: 28px;      /* Line height for slogan */
+    margin-left: 8px;       /* Margin left for slogan */
+    display: block;         /* Display block for slogan to be below logo text */
+}
+
+.footer-29 .footer-list-29 p {
+    color: rgba(255, 255, 255, 0.7); /* Light gray color for paragraph text */
+    line-height: 28px;      /* Line height for paragraph text */
+}
+
+.footer-29 .main-social-footer-29 a {
+    width: 38px;            /* Fixed width for social icons */
+    height: 38px;           /* Fixed height for social icons */
+    display: inline-flex;  /* Inline flex for social icons */
+    align-items: center;     /* Vertically center icon */
+    justify-content: center; /* Horizontally center icon */
+    border-radius: 50%;     /* Rounded corners for social icons */
+    text-align: center;    /* Center text in icon */
+    color: #fff;            /* White color for social icons */
+    background: #23272b;     /* Dark background color for social icons */
+    font-size: 16px;        /* Icon size */
+    margin-right: 8px;      /* Margin right between icons */
+    transition: 0.3s ease;   /* Smooth transition for hover effect */
+}
+
+.footer-29 .main-social-footer-29 a:hover {
+    background: #ff6900;     /* Orange background color on hover */
+    color: #fff;            /* White color on hover */
+}
+
+.footer-29 .footer-title-29 {
+    font-size: 24px;        /* Larger font size for footer titles */
+    margin-bottom: 30px;    /* Margin bottom for footer titles */
+    line-height: 30px;      /* Line height for footer titles */
+    color: #fff;            /* White color for footer titles */
+    position: relative;     /* Position relative for potential underline */
+    font-weight: 600;       /* Bold font weight for footer titles */
+}
+
+/* Underline effect for footer titles (optional, you can remove if you don't want underline) */
+.footer-29 .footer-title-29::before {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background: #ff6900; /* Orange underline color */
+}
+
+
+.footer-29 .footer-list-29 ul,
+.footer-list-29 ul li {
+    list-style: none;      /* Remove default list style */
+    padding: 0;             /* Reset padding */
+    margin: 0;             /* Reset margin */
+}
+
+.footer-29 .footer-list-29 ul li a {
+    color: rgba(255, 255, 255, 0.7); /* Light gray color for footer links */
+    line-height: 32px;      /* Line height for footer links */
+    display: block;         /* Display block for footer links */
+    text-decoration: none;  /* Remove text decoration for footer links */
+    transition: 0.3s ease;   /* Smooth transition for hover effect */
+    font-size: 1rem;        /* Font size for footer links */
+}
+
+.footer-29 .footer-list-29 ul li a:hover {
+    color: #fff;            /* White color on hover for footer links */
+    margin-left: 6px;       /* Margin left on hover for footer links - creates slight indent effect */
+}
+
+/* Arrow icon before footer links */
+.footer-29 .footer-list-29 ul li a:before {
+    font-family: "FontAwesome"; /* Font Awesome for arrow icon */
+    content: "\f105";        /* Unicode for Font Awesome angle-right icon */
+    font-size: 16px;        /* Icon size */
+    margin-right: 8px;      /* Margin right for icon */
+    position: relative;     /* Position relative for icon alignment */
+    top: 1px;               /* Adjust icon vertical alignment */
+}
+
+/* Specific style for category and meta widgets' links arrow */
+.footer-29 .widget_categories ul li a:before,
+.footer-29 .widget_meta ul li a:before {
+    content: "\f105";        /* Same arrow icon for categories and meta widgets */
+}
+
+.w3l-copyright {
+    background: #191c20;     /* Darker background for copyright section */
+    padding-top: 25px;      /* Padding top for copyright section */
+    padding-bottom: 25px;   /* Padding bottom for copyright section */
+}
+
+.w3l-copyright p {
+    color: rgba(255, 255, 255, 0.8); /* Light gray color for copyright text */
+    margin-bottom: 0;       /* Remove bottom margin for copyright text */
+    text-align: center;    /* Center align copyright text */
+}
+
+.w3l-copyright p a {
+    color: #ff6900;         /* Orange color for copyright link */
+}
+
+.w3l-copyright p a:hover {
+    color: #fff;            /* White color on hover for copyright link */
+}
+
+.footer-29 .footer-list-29 a {
+    text-decoration: none;  /* Ensure no text decoration for footer links */
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) { /* Breakpoint for medium screens and below */
+    .footer-29 {
+        padding: 3rem 0;     /* Reduced padding for smaller screens */
+    }
+
+    .footer-29 .footer-top-29 {
+        padding-bottom: 20px; /* Reduced padding bottom for smaller screens */
+    }
+
+    .footer-29 .footer-list-29 {
+        margin-bottom: 30px; /* Margin bottom for footer list on smaller screens */
+    }
+
+    .footer-29 .footer-title-29 {
+        margin-bottom: 20px; /* Reduced margin bottom for footer titles on smaller screens */
+        font-size: 22px;    /* Smaller font size for footer titles on smaller screens */
+    }
+
+    .footer-29 .footer-list-29 p,
+    .footer-29 .footer-logo span {
+        font-size: 16px;    /* Smaller font size for paragraph and slogan on smaller screens */
+        line-height: 26px;  /* Adjusted line height for smaller screens */
+    }
+}

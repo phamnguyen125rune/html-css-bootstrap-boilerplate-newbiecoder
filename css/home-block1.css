@@ -1,0 +1,115 @@
+/* Home Block 1 - About Us Section Styles */
+
+.home-block1 {
+    /* Add general CSS for the home-block1 section if needed */
+}
+
+.home-block1.py-5 {
+    /* py-5 class is defined by Bootstrap, no need to style it here */
+}
+
+.home-block1 .container {
+    /* container class is defined by Bootstrap, no need to style it here */
+}
+
+.home-block1 .row {
+    /* row class is defined by Bootstrap, no need to style it here */
+}
+
+.home-block1 .col-lg-6 {
+    /* col-lg-6 class is defined by Bootstrap, no need to style it here */
+}
+
+/* Home Block 1 - Content Container */
+.home-block1__content {
+    /* Style for the text content container on the left */
+}
+
+/* Home Block 1 - Small Title */
+.home-block1__title-small {
+    color: #ff6900; /* Orange color - consistent with theme */
+    font-size: 1rem;
+    letter-spacing: 1px;
+    font-weight: 600;
+    text-transform: uppercase; /* Uppercase text */
+}
+
+/* Home Block 1 - Main Title */
+.home-block1__title-big {
+    font-size: 2.5rem; /* Larger size */
+    font-weight: 700; /* Bolder font weight */
+    line-height: 1.2;
+    color: #0d1326; /* Dark color - consistent with header background */
+}
+
+/* Home Block 1 - Text Paragraph */
+.home-block1__text {
+    color: #5a5a5a; /* Lighter gray color */
+    font-size: 1rem;
+    line-height: 1.8;
+}
+
+/* Home Block 1 - Service List */
+.home-block1__service-list {
+    /* service-list class may have CSS in the old style.css, reuse or rewrite as needed */
+    /* Example: */
+    /* list-style: none; */
+    /* padding-left: 0; */
+}
+
+/* Home Block 1 - Service Item */
+.home-block1__service-item {
+    /* service-link class may have CSS in the old style.css, reuse or rewrite as needed */
+    /* Example: */
+    /* margin-bottom: 10px; */
+}
+
+/* Home Block 1 - Service Link */
+.home-block1__service-link {
+    /* service-link > a class may have CSS in the old style.css, reuse or rewrite as needed */
+    /* Example: */
+    /* color: #5a5a5a; */
+    /* text-decoration: none; */
+    /* display: block; */
+    /* padding: 0.5rem 0; */
+    /* transition: color 0.3s ease; */
+}
+
+/* Home Block 1 - Service Link - Hover State Modifier */
+.home-block1__service-link:hover {
+    color: #0d1326; /* Darker color on hover */
+}
+
+/* Home Block 1 - Service Link - Icon (Font Awesome) */
+.home-block1__service-link > span.fa {
+    margin-right: 5px; /* Spacing between icon and text */
+    color: #ff6900; /* Orange color for the icon */
+}
+
+
+/* Home Block 1 - Images Container */
+.home-block1__images {
+    /* Style for the image container on the right */
+}
+
+/* Home Block 1 - About Image */
+.home-block1__about-image {
+    border-radius: 6px; /* Rounded corners for images */
+    object-fit: cover;  /* Ensures images don't distort when the container size changes */
+    width: 100%;        /* Takes up the full width of the container */
+    height: auto;       /* Automatic height */
+}
+
+/* Class radius-image may have CSS in the old style.css, reuse or rewrite as needed if necessary */
+/* Example: */
+/* .radius-image { */
+/*     border-radius: 6px; */
+/* } */
+
+
+/* Responsive Styles (adjustments for smaller screens) */
+@media (max-width: 991px) { /* Breakpoint md and below */
+    .home-block1__title-big {
+        font-size: 2rem; /* Smaller title on mobile */
+    }
+}

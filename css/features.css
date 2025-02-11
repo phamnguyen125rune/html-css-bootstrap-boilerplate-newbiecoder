@@ -1,0 +1,146 @@
+/* Features Section Styles */
+
+.features {
+    /* Add general CSS for the features section if needed */
+}
+
+.features.py-5 {
+    /* py-5 class is defined by Bootstrap, no need to style it here */
+}
+
+.features .container {
+    /* container class is defined by Bootstrap, no need to style it here */
+}
+
+.features .row {
+    /* row class is defined by Bootstrap, no need to style it here */
+}
+
+.features .col-lg-6 {
+    /* col-lg-6 class is defined by Bootstrap, no need to style it here */
+}
+
+/* Features Grid Left Column */
+.features__grid-left {
+    /* Style for the left column (text) */
+    padding-right: 30px; /* Add right padding to create space from the right column */
+}
+
+/* Features Content Left Container */
+.features__content-left {
+    /* Style for the text content container on the left */
+}
+
+/* Features Small Title */
+.features__title-small {
+    color: #ff6900; /* Orange color - consistent with theme */
+    font-size: 1rem;
+    letter-spacing: 1px;
+    font-weight: 600;
+    text-transform: uppercase; /* Uppercase text */
+}
+
+/* Features Main Title */
+.features__title-big {
+    font-size: 2rem;     /* Main title size */
+    font-weight: 700;     /* Bolder font weight */
+    line-height: 1.3;
+    color: #0d1326;      /* Dark color - consistent with header background */
+    margin-bottom: 25px;  /* Spacing below the main title */
+}
+
+/* Features Text Paragraph */
+.features__text {
+    color: #777;          /* Medium gray color */
+    font-size: 1rem;
+    line-height: 1.8;
+    margin-bottom: 20px;  /* Spacing below the paragraph */
+}
+
+/* Features Grid Right Column */
+.features__grid-right {
+    /* Style for the right column (icon grid) */
+}
+
+/* Features Icon Grid Container */
+.features__icon-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive grid layout, min width 200px */
+    gap: 20px; /* Spacing between the icon boxes */
+}
+
+/* Features Box Container */
+.features__box {
+    background-color: #fff; /* White background for the icon boxes */
+    padding: 30px;         /* Padding inside the icon boxes */
+    border-radius: 8px;    /* Rounded corners for the icon boxes */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+    transition: transform 0.3s ease; /* Transform effect on hover */
+}
+
+/* Features Box - Hover State Modifier */
+.features__box:hover {
+    transform: translateY(-5px); /* Lift the box up 5px on hover */
+}
+
+/* Features Icon Container */
+.features__icon {
+    margin-bottom: 20px;   /* Spacing below the icon */
+}
+
+/* Features Icon Image Element */
+.features__icon-image {
+    max-width: 70px;       /* Maximum width of the icon */
+    height: auto;          /* Automatic height */
+    display: block;         /* Display as block for easier centering */
+    margin: 0 auto;        /* Center the icon horizontally */
+}
+
+/* Features Box Title */
+.features__box-title {
+    font-size: 1.2rem;     /* Icon box title size */
+    font-weight: 600;     /* Bolder font weight */
+    color: #0d1326;      /* Dark color - consistent with header background */
+    text-align: center;    /* Center the title horizontally */
+}
+
+/* Features Box Title Link */
+.features__box-title a.title-head {
+    text-decoration: none;  /* Remove default link underline */
+    color: inherit;         /* Inherit text color from parent (h4) */
+    transition: color 0.3s ease; /* Color effect on hover */
+}
+
+/* Features Box Title Link - Hover State Modifier */
+.features__box-title a.title-head:hover {
+    color: #ff6900;         /* Orange color on hover */
+}
+
+
+/* Responsive Styles (adjustments for smaller screens) */
+@media (max-width: 991px) { /* Breakpoint md and below */
+    .features__grid-left {
+        padding-right: 0; /* Remove right padding on mobile */
+        margin-bottom: 30px; /* Add bottom margin for the text column on mobile */
+    }
+
+    .features__title-big {
+        font-size: 1.7rem; /* Smaller title on mobile */
+    }
+
+    .features__icon-grid {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Smaller icon boxes on mobile */
+        gap: 15px; /* Smaller spacing between icon boxes on mobile */
+    }
+
+    .features__box {
+        padding: 20px;     /* Smaller padding inside the icon boxes on mobile */
+    }
+
+    .features__icon-image {
+        max-width: 50px;   /* Smaller icons on mobile */
+    }
+
+    .features__box-title {
+        font-size: 1rem;   /* Smaller icon box title on mobile */
+    }
+}

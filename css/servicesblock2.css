@@ -1,0 +1,141 @@
+/* Services Block 2 Styles */
+
+.servicesblock2 {
+    /* Add general CSS for the servicesblock2 section if needed */
+    background-color: #f8f9fa; /* Light gray background color */
+}
+
+.servicesblock2.py-5 {
+    /* py-5 class is defined by Bootstrap, no need to style it here */
+}
+
+.servicesblock2 .container {
+    /* container class is defined by Bootstrap, no need to style it here */
+}
+
+.servicesblock2 #grids5-block {
+    /* grids5-block class doesn't need to be styled here, as it's just an inner section container */
+}
+
+.servicesblock2 .row {
+    /* row class is defined by Bootstrap, no need to style it here */
+}
+
+.servicesblock2 .col-lg-4 {
+    /* col-lg-4 class is defined by Bootstrap, no need to style it here */
+}
+
+/* Services Block 2 - Header Content Container */
+.servicesblock2__header-content {
+    max-width: 700px;      /* Limit the width of the header content */
+    margin-left: auto;     /* Center the header content horizontally */
+    margin-right: auto;
+}
+
+/* Services Block 2 - Main Title */
+.servicesblock2__title-big {
+    /* section-main-title class has common CSS, adjust further if needed */
+    font-size: 2.3rem;     /* Main title size */
+    line-height: 1.3;
+    color: #0d1326;      /* Dark color - consistent with header background */
+    font-weight: 700;     /* Bolder font weight */
+    margin-bottom: 40px;  /* Spacing below the main title */
+}
+
+/* Services Block 2 - Grids 5 Info Container */
+.servicesblock2__grids5-info {
+    background-color: #fff; /* White background for the service boxes */
+    border-radius: 8px;    /* Rounded corners for the service boxes */
+    padding: 35px;         /* Padding inside the service boxes */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.08); /* Lighter shadow effect */
+    transition: box-shadow 0.3s ease; /* Box-shadow effect on hover */
+}
+
+/* Services Block 2 - Grids 5 Info Container - Hover State Modifier */
+.servicesblock2__grids5-info:hover {
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.15); /* Darker shadow on hover */
+}
+
+/* Services Block 2 - Zoom Link */
+.servicesblock2__zoom {
+    display: block;         /* Display as block for effective zoom */
+    overflow: hidden;      /* Hide image overflow during zoom */
+    border-radius: 8px;    /* Rounded corners for zoom image */
+}
+
+/* Services Block 2 - Service Image */
+.servicesblock2__service-image {
+    border-radius: 8px 8px 0 0; /* Rounded top corners for the service image */
+    display: block;         /* Display as block for effective zoom */
+    transition: transform 0.5s ease; /* Image zoom effect */
+}
+
+/* Services Block 2 - Zoom Link - Hover State Modifier - Service Image */
+.servicesblock2__zoom:hover .servicesblock2__service-image {
+    transform: scale(1.1); /* Enlarge the image 1.1 times on zoom link hover */
+}
+
+/* Services Block 2 - Blog Info Container */
+.servicesblock2__blog-info {
+    padding-top: 25px;      /* Padding above the blog info */
+}
+
+/* Services Block 2 - Title Link */
+.servicesblock2__title {
+    font-size: 1.3rem;     /* Service title size */
+    line-height: 1.4;
+    font-weight: 700;     /* Bolder font weight */
+    color: #0d1326;      /* Dark color - consistent with header background */
+    text-decoration: none;  /* Remove default link underline */
+    display: block;         /* Display as block for easier alignment */
+    transition: color 0.3s ease; /* Color effect on hover */
+}
+
+/* Services Block 2 - Title Link - Hover State Modifier */
+.servicesblock2__title:hover {
+    color: #ff6900;         /* Orange color on hover */
+}
+
+/* Services Block 2 - Text Paragraph */
+.servicesblock2__text {
+    color: #777;          /* Medium gray color */
+    margin-top: 10px;      /* Spacing above the paragraph */
+}
+
+/* Services Block 2 - Button */
+.servicesblock2__btn {
+    /* btn-style1 class has common CSS, adjust further if needed */
+    display: inline-block;  /* Display as inline-block for easier alignment */
+    padding: 12px 35px;    /* Button padding */
+    font-size: 1rem;
+    font-weight: 600;     /* Bolder font weight */
+    border-radius: 6px;    /* Rounded corners for the button */
+    background-color: transparent; /* Transparent background */
+    border: 2px solid #0d1326; /* Dark color button border */
+    color: #0d1326;      /* Dark color text */
+    transition: all 0.3s ease; /* Transition effect */
+    text-decoration: none;  /* Remove default link underline */
+}
+
+/* Services Block 2 - Button - Hover State Modifier */
+.servicesblock2__btn:hover {
+    background-color: #0d1326; /* Dark color background on hover */
+    color: #fff;            /* White color text on hover */
+}
+
+
+/* Responsive Styles (adjustments for smaller screens) */
+@media (max-width: 991px) { /* Breakpoint md and below */
+    .servicesblock2__title-big {
+        font-size: 2rem; /* Smaller title on mobile */
+        margin-bottom: 20px; /* Smaller spacing below the title on mobile */
+    }
+
+    .servicesblock2__grids5-info {
+        padding: 25px;     /* Smaller service box padding on mobile */
+    }
+
+    .servicesblock2__title {
+        font-size: 1.1rem; /* Smaller service title on mobile */
+    }
+}
