@@ -45,15 +45,16 @@ document.addEventListener('DOMContentLoaded', function () {
             $("#site-header").removeClass("nav-fixed"); // Remove 'nav-fixed' class from header
         }
     });
-    // JavaScript for Header Darker Background on Mobile Menu Toggle - NEW CODE ADDED
-    const navbarToggler = document.querySelector('.navbar-toggler'); // Select navbar toggler button
-    const headerElement = document.getElementById('site-header'); // Select header element
-    if (navbarToggler && headerElement) { // Check if both elements exist
+    
+    
+    const navbarToggler = document.querySelector('.navbar-toggler');   
+    const headerElement = document.getElementById('site-header'); 
+    if (navbarToggler && headerElement) { 
         navbarToggler.addEventListener('click', function () {
             if (headerElement.classList.contains('nav-active')) {
-                headerElement.classList.remove('nav-active'); // Remove 'nav-active' class to hide darker background
+                headerElement.classList.remove('nav-active');  
             } else {
-                headerElement.classList.add('nav-active'); // Add 'nav-active' class to show darker background
+                headerElement.classList.add('nav-active');  
             }
         });
     }    

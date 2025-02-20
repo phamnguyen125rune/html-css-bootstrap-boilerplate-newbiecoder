@@ -1,35 +1,13 @@
-/* Testimonials Section Styles */
-
-.testimonials {
-    background-color: #fff; /* Nền trắng cho section */
-}
-
-.testimonials .customer-layout {
-    /* customer-layout class doesn't need to be styled here, as it's just a container wrapper */
-}
-
-.testimonials .container {
-    /* container class is defined by Bootstrap, no need to style it here */
-}
-
-.testimonials .row {
-    /* row class is defined by Bootstrap, no need to style it here */
-}
-
-.testimonials .col-lg-4 {
-    /* col-lg-4 class is defined by Bootstrap, no need to style it here */
-}
-
 /* Testimonials Header Content Container */
 .testimonials__header-content {
-    max-width: 700px;      /* Limit the width of the header content */
-    margin-left: auto;     /* Center the header content horizontally */
+    max-width: 700px;    
+    margin-left: auto;     
     margin-right: auto;
 }
 
 /* Testimonials Small Title */
 .testimonials__title-small {
-    color: #ff6900; /* Orange color - consistent with theme */
+    color: #4d4e4e; /* Orange color - consistent with theme */
     font-size: 1rem;
     letter-spacing: 1px;
     font-weight: 600;
@@ -83,7 +61,6 @@
     top: 0;
     left: 0;
     font-size: 3rem;       /* Quote icon size */
-    color: #ff6900;         /* Orange color - consistent with theme */
     opacity: 0.15;          /* Icon opacity */
 }
 

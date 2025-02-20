@@ -1,129 +1,198 @@
-
-/* Progress Section Styles */
-
-.progress-section {
-    /* Add general CSS for the progress-section if needed */
+.w3l-progress .progress-info {
+    margin-bottom: 30px;
+    text-align: left;
+    position: relative;
 }
 
-.progress-section.py-5 {
-    /* py-5 class is defined by Bootstrap, no need to style it here */
+.w3l-progress .info1 h6.progress-tittle {
+    display: grid
+;
+    grid-template-columns: 1fr auto;
+    width: 80%;
 }
 
-.progress-section .midd-w3 {
-    /* midd-w3 class doesn't need to be styled here, as it's just a container wrapper */
+.w3l-progress h6.progress-tittle {
+    font-size: 18px;
+    color: var(--heading-color);
+    margin-bottom: 10px;
+    font-weight: 400;
 }
 
-.progress-section .container {
-    /* container class is defined by Bootstrap, no need to style it here */
+.w3l-progress .progress {
+    display: flex
+;
+    height: 4px;
+    overflow: hidden;
+    font-size: 0.75rem;
+    background-color: var(--bg-grey);
+    border-radius: 0.25rem;
 }
 
-.progress-section .row {
-    /* row class is defined by Bootstrap, no need to style it here */
+.progress-bar {
+    display: flex
+;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    background-color: #00a63f;
+    transition: width 0.6sease;
 }
 
-.progress-section .col-lg-6 {
-    /* col-lg-6 class is defined by Bootstrap, no need to style it here */
+.w3l-progress .progress-bar {
+    background-color: var(--primary-color);
+    transition: width 0.6sease;
 }
 
-/* Progress Section - Image Block Container */
-.progress-section__image-block {
-    /* Style for the image container on the left */
+.w3l-progress .progress-bar-striped {
+    background-image: none;
+    background-size: cover;
 }
 
-/* Progress Section - About Image */
-.progress-section__about-image {
-    border-radius: 8px; /* Rounded corners for the image */
-    object-fit: cover;  /* Ensures the image doesn't distort */
+.w3l-progress .progress-bar.gradient-1 {
+    color: #61fded;
+    background-color: #0d8abc;
+    background-image: linear-gradient(-224deg, #0d8abc, #61fded);
 }
 
-/* radius-image class has common CSS, reuse or rewrite if needed */
-
-
-/* Progress Section - Content Container */
-.progress-section__content {
-    /* Style for the text and progress bars container on the right */
+.w3l-progress .progress-bar.gradient-1:before, .w3l-progress .progress-bar.gradient-2:before, .w3l-progress .progress-bar.gradient-3:before, .w3l-progress .progress-bar.gradient-4:before {
+    height: 28px;
+    width: 28px;
+    border: 1px solid;
+    opacity: .3;
 }
 
-/* Progress Section - Small Title */
-.progress-section__title-small {
-    color: #ff6900; /* Orange color - consistent with theme */
-    font-size: 1rem;
-    letter-spacing: 1px;
-    font-weight: 600;
-    text-transform: uppercase; /* Uppercase text */
-    display: block;         /* Display as block */
-    margin-bottom: 10px;   /* Spacing below the subtitle */
+.w3l-progress .progress-bar.gradient-1:after, .w3l-progress .progress-bar.gradient-1:before {
+    content: "";
+    position: absolute;
+    right: 20%;
+    top: 90%;
+    border-radius: 50%;
+    transform: translate(50%, -50%);
 }
 
-/* Progress Section - Main Title */
-.progress-section__title-big {
-    font-size: 2.3rem;     /* Main title size */
-    font-weight: 700;     /* Bolder font weight */
-    line-height: 1.3;
-    color: #0d1326;      /* Dark color - consistent with header background */
-    margin-bottom: 30px;  /* Spacing below the main title */
+.w3l-progress .progress-bar.gradient-1:after, .w3l-progress .progress-bar.gradient-2:after, .w3l-progress .progress-bar.gradient-3:after, .w3l-progress .progress-bar.gradient-4:after {
+    height: 13px;
+    width: 13px;
+    border: 3px solid;
+    background-color: var(--bg-color);
 }
 
-/* Progress Section - Progress Info Container */
-.progress-section__progress-info {
-    margin-bottom: 20px;   /* Spacing below each progress bar info */
+.w3l-progress .progress-bar.gradient-1:after, .w3l-progress .progress-bar.gradient-1:before {
+    content: "";
+    position: absolute;
+    right: 20%;
+    top: 90%;
+    border-radius: 50%;
+    transform: translate(50%, -50%);
 }
 
-/* Progress Section - Progress Title */
-.progress-section__progress-title {
-    margin-bottom: 10px;   /* Spacing below the progress bar title */
-    font-weight: 600;     /* Moderately bold */
-    color: #444;          /* Darker gray color */
-    display: flex;         /* Flexbox for percentage alignment */
-    justify-content: space-between; /* Push title and percentage to the sides */
+.w3l-progress .progress-bar.gradient-2 {
+    color: #eece90;
+    background-color: #d45529;
+    background-image: linear-gradient(-224deg, #d45529, #eece90);
 }
 
-/* Progress Section - Progress Percentage */
-.progress-section__progress-percentage {
-    color: #ff6900;         /* Orange color - consistent with theme */
-    font-weight: 700;     /* Bolder font weight */
+.w3l-progress .progress-bar.gradient-2:after, .w3l-progress .progress-bar.gradient-2:before {
+    content: "";
+    position: absolute;
+    right: 5%;
+    top: 90%;
+    border-radius: 50%;
+    transform: translate(50%, -50%);
 }
 
-/* Progress Section - Progress Bar Container (Bootstrap) */
-.progress-section__progress.progress { /* Combine BEM class with Bootstrap class */
-    height: 10px;          /* Progress bar height */
-    background-color: #e9ecef; /* Progress bar background color */
-    border-radius: 0;       /* Remove border radius */
-    overflow: hidden;      /* Hide overflow from border radius */
+.w3l-progress .progress-bar.gradient-1:before, .w3l-progress .progress-bar.gradient-2:before, .w3l-progress .progress-bar.gradient-3:before, .w3l-progress .progress-bar.gradient-4:before {
+    height: 28px;
+    width: 28px;
+    border: 1px solid;
+    opacity: .3;
 }
 
-/* Progress Section - Progress Bar (Bootstrap) */
-.progress-section__progress-bar.progress-bar { /* Combine BEM class with Bootstrap class */
-    background-color: #ff6900; /* Default orange color for progress bar */
-    transition: width 2s ease; /* Transition effect for progress bar width */
+.w3l-progress .progress-bar.gradient-2:after, .w3l-progress .progress-bar.gradient-2:before {
+    content: "";
+    position: absolute;
+    right: 5%;
+    top: 90%;
+    border-radius: 50%;
+    transform: translate(50%, -50%);
+}
+.w3l-progress .progress-bar.gradient-1:after, .w3l-progress .progress-bar.gradient-2:after, .w3l-progress .progress-bar.gradient-3:after, .w3l-progress .progress-bar.gradient-4:after {
+    height: 13px;
+    width: 13px;
+    border: 3px solid;
+    background-color: var(--bg-color);
 }
 
-/* Gradient Color Styles for Progress Bars */
-.progress-section__progress-bar.gradient-1 {
-    background-image: linear-gradient(to right, #ff6900 0%, #ec751a 100%); /* Gradient 1 */
+.w3l-progress .progress-bar.gradient-3 {
+    color: #5c51ff;
+    background-color: #f646a9;
+    background-image: linear-gradient(-224deg, #f646a9, #5c51ff);
 }
 
-.progress-section__progress-bar.gradient-2 {
-    background-image: linear-gradient(to right, #007bff 0%, #0056b3 100%); /* Gradient 2 - blue color */
+.w3l-progress .progress-bar.gradient-3:after, .w3l-progress .progress-bar.gradient-3:before {
+    content: "";
+    position: absolute;
+    right: 40%;
+    top: 90%;
+    border-radius: 50%;
+    transform: translate(50%, -50%);
+}
+.w3l-progress .progress-bar.gradient-1:before, .w3l-progress .progress-bar.gradient-2:before, .w3l-progress .progress-bar.gradient-3:before, .w3l-progress .progress-bar.gradient-4:before {
+    height: 28px;
+    width: 28px;
+    border: 1px solid;
+    opacity: .3;
 }
 
-.progress-section__progress-bar.gradient-3 {
-    background-image: linear-gradient(to right, #28a745 0%, #19692c 100%); /* Gradient 3 - green color */
+.w3l-progress .progress-bar.gradient-3:after, .w3l-progress .progress-bar.gradient-3:before {
+    content: "";
+    position: absolute;
+    right: 40%;
+    top: 90%;
+    border-radius: 50%;
+    transform: translate(50%, -50%);
+}
+.w3l-progress .progress-bar.gradient-1:after, .w3l-progress .progress-bar.gradient-2:after, .w3l-progress .progress-bar.gradient-3:after, .w3l-progress .progress-bar.gradient-4:after {
+    height: 13px;
+    width: 13px;
+    border: 3px solid;
+    background-color: var(--bg-color);
 }
 
-.progress-section__progress-bar.gradient-4 {
-    background-image: linear-gradient(to right, #dc3545 0%, #b02a37 100%); /* Gradient 4 - red color */
+.w3l-progress .progress-bar.gradient-4 {
+    color: #e5529a;
+    background-color: #e77654;
+    background-image: linear-gradient(-224deg, #e77654, #e5529a);
 }
 
-
-/* Responsive Styles (adjustments for smaller screens) */
-@media (max-width: 991px) { /* Breakpoint md and below */
-    .progress-section__title-big {
-        font-size: 2rem; /* Smaller title on mobile */
-    }
-
-    .progress-section__image-block {
-        margin-bottom: 30px; /* Add bottom margin for image column on mobile */
-        text-align: center;   /* Center the image horizontally on mobile */
-    }
+.w3l-progress .progress-bar.gradient-4:after, .w3l-progress .progress-bar.gradient-4:before {
+    content: "";
+    position: absolute;
+    right: 15%;
+    top: 90%;
+    border-radius: 50%;
+    transform: translate(50%, -50%);
+}
+.w3l-progress .progress-bar.gradient-1:before, .w3l-progress .progress-bar.gradient-2:before, .w3l-progress .progress-bar.gradient-3:before, .w3l-progress .progress-bar.gradient-4:before {
+    height: 28px;
+    width: 28px;
+    border: 1px solid;
+    opacity: .3;
+}
+.w3l-progress .progress-bar.gradient-4:after, .w3l-progress .progress-bar.gradient-4:before {
+    content: "";
+    position: absolute;
+    right: 15%;
+    top: 90%;
+    border-radius: 50%;
+    transform: translate(50%, -50%);
+}
+.w3l-progress .progress-bar.gradient-1:after, .w3l-progress .progress-bar.gradient-2:after, .w3l-progress .progress-bar.gradient-3:after, .w3l-progress .progress-bar.gradient-4:after {
+    height: 13px;
+    width: 13px;
+    border: 3px solid;
+    background-color: var(--bg-color);
 }

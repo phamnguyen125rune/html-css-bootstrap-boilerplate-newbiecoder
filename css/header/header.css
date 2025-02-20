@@ -1,0 +1,297 @@
+/* css/header.css */
+
+header {
+  display: block;
+  unicode-bidi: isolate;
+}
+
+header.main-header {
+  padding: 0px;
+  transition: all 0.4sease 0s;
+  height: 100px;
+  display: grid;
+  align-items: center;
+  z-index: 10;
+  border-bottom: 1px solid rgba(231, 231, 231, 0.18);
+}
+
+header.nav-fixed {
+  padding: 0px;
+  background-color: var(--bg-color);
+  height: 80px;
+  border-bottom: none;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.05);
+}
+
+.navbar {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0; /* Combined duplicate rules */
+}
+
+nav {
+  margin: 0;
+  padding: 0;
+}
+.navbar .navbar-brand {
+  margin: 0;
+  font-size: 30px;
+  font-weight: 600;
+  text-transform: capitalize;
+  color: #fff;
+  display: inline-block;
+}
+
+.navbar .navbar-brand span.fa {
+  color: var(--primary-color);
+  margin-right: 5px;
+  vertical-align: bottom;
+}
+
+.navbar .navbar-brand span.logo {
+  text-transform: none;
+  display: block;
+  font-size: 14px;
+  padding-left: 46px;
+  font-weight: 600;
+  opacity: .9;
+}
+
+.navbar-toggler {
+  padding: 0.25rem 0.75rem;
+  font-size: 1.25rem;
+  line-height: 1;
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+}
+
+.navbar-toggler-icon {
+  display: inline-block;
+  width: 1.5em;
+  height: 1.5em;
+  vertical-align: middle;
+  content: "";
+  background: no-repeat center center;
+  background-size: 100% 100%;
+}
+.navbar-dark .navbar-toggler {
+  color: rgba(255, 255, 255, 0.5);
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+@media only screen and (max-width: 991px) {
+  .navbar-dark .navbar-toggler-icon {
+    background-image: none;
+    padding: 0;
+    width: 34px;
+    height: 34px;
+    display: inline-block;
+    background: var(--primary-color);
+    border-radius: 4px;
+    text-align: center;
+  }
+  .navbar-toggler {
+      border: 0 none;
+      font-size: 24px;
+      padding: 0rem 0rem !important;
+  }
+    .navbar-toggler-icon.fa {
+        font-size: 20px;
+        line-height: 1.2em;
+        color: #fff;
+        line-height: 34px;
+    }
+    .navbar-collapse {
+        max-height: calc(100vh - 80px);
+        overflow-y: scroll;
+    }
+
+}
+
+button.navbar-toggler .icon-expand {
+  display: none;
+}
+button.navbar-toggler.collapsed .icon-expand {
+  display: block;
+}
+button.navbar-toggler.collapsed .icon-close {
+  display: none;
+}
+button.navbar-toggler .icon-close {
+  display: block;
+}
+
+
+.navbar-dark .navbar-toggler-icon {
+  background-image: url(data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 0.5)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e);
+}
+
+.collapse:not(.show) {
+  display: none;
+}
+
+.navbar-collapse {
+  flex-basis: 100%;
+  flex-grow: 1;
+  align-items: center;
+}
+
+.navbar-expand-lg .navbar-nav .nav-item {
+  padding: 0 12px;
+  transition: all 0.5sease;
+  position: relative;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+  transition: all 0.5sease;
+  padding: 14px 0 10px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #fff;
+  opacity: .8;
+  text-transform: uppercase;
+}
+
+.nav-fixed .navbar-expand-lg .navbar-nav .nav-link {
+  color: var(--heading-color);
+  opacity: 0.7;
+}
+
+.nav-fixed .navbar-expand-lg .navbar-nav li.nav-item.active .nav-link {
+  color: var(--primary-color);
+  opacity: 0.9;
+}
+
+.nav-fixed .navbar-expand-lg .navbar-brand {
+  color: var(--heading-color);
+}
+
+.control {
+  cursor: pointer;
+}
+
+.control .btn-material {
+  line-height: 45px;
+  text-align: center;
+  width: 45px;
+  height: 45px;
+  border-radius: 100%;
+  box-sizing: border-box;
+  background: var(--primary-color);
+  outline: 0;
+  transform-origin: 50%;
+  transition: all 0.7scubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.control .icon-material-search {
+  color: #FFF;
+  transition: opacity 0.3sease-in-out;
+}
+
+.theme-switch {
+  display: inline-block;
+  position: relative;
+  margin: 0;
+}
+
+.theme-switch input {
+  display: none;
+}
+
+.mode-container {
+  width: 24px;
+  height: 24px;
+  padding: 1px 0;
+}
+
+.gg-sun {
+  position: relative;
+  transform: scale(var(--ggs, 1));
+  height: 24px;
+  background: linear-gradient(180deg, currentColor 4px, transparent 0) no-repeat 5px -6px / 2px 6px, linear-gradient(180deg, currentColor 4px, transparent 0) no-repeat 5px 14px / 2px 6px, linear-gradient(180deg, currentColor 4px, transparent 0) no-repeat -8px 5px / 6px 2px, linear-gradient(180deg, currentColor 4px, transparent 0) no-repeat 14px 5px / 6px 2px;
+  border-radius: 100px;
+  box-shadow: inset 0 0 0 2px;
+  border: 6px solid transparent;
+}
+
+.gg-sun, .gg-sun:after, .gg-sun:before {
+  box-sizing: border-box;
+  display: block;
+  width: 24px;
+  color: #eee;
+}
+
+.mode-container i.gg-sun {
+  display: none;
+}
+
+.gg-moon {
+  overflow: hidden;
+  position: relative;
+  transform: rotate(-135deg) scale(var(--ggs, 1));
+  width: 20px;
+  height: 20px;
+  border: 2px solid;
+  border-bottom: 2px solid transparent;
+}
+
+.gg-moon, .gg-moon:after {
+  display: block;
+  box-sizing: border-box;
+  border-radius: 50%;
+  color: #eee;
+}
+
+.mode-container i.gg-moon {
+  display: block;
+}
+.nav-fixed .navbar-expand-lg .mode-container i {
+  color: var(--heading-color);
+  opacity: 0.9;
+}
+.nav-fixed .gg-moon, .nav-fixed .gg-moon:after {
+  display: block;
+  box-sizing: border-box;
+  border-radius: 50%;
+  color: var(--heading-color);
+}
+
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-toggler {
+      display: none;
+  }
+  .navbar-expand-lg .navbar-collapse {
+      display: flex !important;
+      flex-basis: auto;
+  }
+  .navbar-expand-lg .navbar-nav {
+      flex-direction: row;
+  }
+    .ml-lg-auto, .mx-lg-auto {
+        margin-left: auto !important;
+    }
+}
+
+@media only screen and (max-width: 1440px) {
+  .navbar-expand-lg .navbar-nav .nav-item {
+      padding: 0 10px;
+  }
+}
+
+@media only screen and (max-width: 1199px) {
+  .navbar .navbar-brand {
+      font-size: 32px;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .navbar-expand-lg .navbar-nav .nav-link {
+      display: inline-block;
+      padding: 6px 0;
+      text-align: center;
+  }
+}
