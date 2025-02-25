@@ -9,57 +9,51 @@
                 document.head.innerHTML = headHTML;
             });
     </script>
-    <title>New Brand - Home</title>
+    <title>New Brand - Services</title>
 </head>
+
 <body>
     <div id="header-container"></div> <!-- Placeholder for header -->
     <!-- breadcrumb -->
-    <section class="w3l-about-breadcrumb text-center">
-        <div class="breadcrumb-bg breadcrumb-bg-about py-5">
+    <section class="breadcrumb">
+        <div class="breadcrumb__bg breadcrumb__bg--about py-5">
             <style>
-                .breadcrumb-bg-about {
+                .breadcrumb__bg--about {
                     background: url(https://wp.w3layouts.com/corpvision/wp-content/themes/corpvision/assets/images/b1.jpg);
                     background-size: cover;
-                    background-repeat: no-repeat,
-                        no-repeat,
-                        no-repeat;
+                    background-repeat: no-repeat, no-repeat, no-repeat;
                     position: relative;
                     z-index: 0;
                 }
             </style>
             <div class="container py-lg-5 py-md-4">
                 <div class="pt-md-5 pt-4">
-                    <h2 class="title ServicesPageBanner">
-                        Services </h2>
-                    <p class="inner-page-para mt-2">
-                        We work with bold brands that we believe in </p>
+                    <h2 class="breadcrumb__title">Services</h2>
+                    <p class="breadcrumb__text mt-2" style="
+                    text-align: center;">We work with bold brands that we believe in</p>
                 </div>
             </div>
-            <div class="hero-overlay"></div>
+            <div class="breadcrumb__overlay"></div>
         </div>
     </section>
     <!-- //breadcrumb -->
 
-
     <!-- ServicesPage Services Section -->
-    <section>
-    </section>
-
-
-    <section class="w3l-features py-5" id="work">
-        <div class="container py-lg-5 py-md-4 py-2 ServicesPageServices">
+    <section class="services py-5" id="work">
+        <div class="container py-lg-5 py-md-4 py-2">
             <div class="title-content text-center mb-md-5 mb-4">
                 <h3 class="title-small">Check our services</h3>
                 <h3 class="title-big mx-lg-5">Introduce our best and reliable services for all your business</h3>
             </div>
 
-            <div class="row main-cont-wthree-2">
+            <div class="row services__grid">
                 <div class="col-lg-6">
-                    <div class="service-grid-left">
+                    <div class="services__item">
                         <img src="https://wp.w3layouts.com/corpvision/wp-content/themes/corpvision/assets/images/icon1.png"
-                            alt="" width="50px" class="img-fluid mb-3">
-                        <h3 class="title-service mb-md-4 mb-3">Product Design</h3>
-                        <p class="text-para mb-lg-2 mb-0">Aurabitur id gravida risus. Fusce eget ex , ultricies nisi ac
+                            alt="" width="50px" class="services__item-icon mb-3">
+                        <h3 class="services__item-title mb-md-4 mb-3">Product Design</h3>
+                        <p class="services__item-text mb-lg-2 mb-0">Aurabitur id gravida risus. Fusce eget ex ,
+                            ultricies nisi ac
                             sed,
                             lacinia est. Quisque ut lectus, eros et, sed risus. Nullam sit amet laoreet elit. non init
                             magnaa velit, dolor eget ex. </p>
@@ -67,23 +61,28 @@
                             Know more</a>
                     </div>
                 </div>
-                <div class="col-lg-6 service-grid-right mt-lg-0">
-                    <img src="https://wp.w3layouts.com/corpvision/wp-content/themes/corpvision/assets/images/s1.jpg"
-                        alt="" class="img-fluid">
+                <div class="col-lg-6">
+                    <div class="services__item-image">
+                        <img src="https://wp.w3layouts.com/corpvision/wp-content/themes/corpvision/assets/images/s1.jpg"
+                            alt="" class="img-fluid">
+                    </div>
                 </div>
             </div>
 
             <div class="row mt-lg-4 mt-5">
-                <div class="col-lg-6 service-grid-right mb-lg-0">
-                    <img src="https://wp.w3layouts.com/corpvision/wp-content/themes/corpvision/assets/images/s2.jpg"
-                        alt="" class="img-fluid">
+                <div class="col-lg-6">
+                    <div class="services__item-image mb-lg-0">
+                        <img src="https://wp.w3layouts.com/corpvision/wp-content/themes/corpvision/assets/images/s2.jpg"
+                            alt="" class="img-fluid">
+                    </div>
                 </div>
                 <div class="col-lg-6">
-                    <div class="service-grid-left">
+                    <div class="services__item">
                         <img src="https://wp.w3layouts.com/corpvision/wp-content/themes/corpvision/assets/images/icon2.png"
-                            alt="" width="50px" class="img-fluid mb-3">
-                        <h3 class="title-service mb-md-4 mb-3">E-commerce Design</h3>
-                        <p class="text-para mb-lg-2 mb-0">Aurabitur id gravida risus. Fusce eget ex , ultricies nisi ac
+                            alt="" width="50px" class="services__item-icon mb-3">
+                        <h3 class="services__item-title mb-md-4 mb-3">E-commerce Design</h3>
+                        <p class="services__item-text mb-lg-2 mb-0">Aurabitur id gravida risus. Fusce eget ex ,
+                            ultricies nisi ac
                             sed,
                             lacinia est. Quisque ut lectus, eros et, sed risus. Nullam sit amet laoreet elit. non init
                             magnaa velit, dolor eget ex. </p>
@@ -96,86 +95,73 @@
         </div>
     </section>
 
-    <section>
-    </section>
     <!-- //ServicesPage Services Section -->
 
-
     <!-- ServicesPage Featured Services Section -->
-    <section>
-    </section>
-
-
-    <section class="w3l-aboutblock1" id="services">
-        <div class="midd-w3 py-5">
-            <div class="container py-lg-5 py-md-4 py-2 ServicesPageFeaturedServices">
+    <section class="featured-services" id="services">
+        <div class="featured-services__container py-5">
+            <div class="container py-lg-5 py-md-4 py-2">
                 <div class="title-content text-center mb-md-5 mb-4">
                     <h3 class="title-small">Beautifully crafted creative solutions</h3>
                     <h3 class="title-big mx-lg-5">What industries we serve?</h3>
                 </div>
                 <div class="row justify-content-center">
 
-                    <div class="col-lg-4 col-md-6 grids-feature">
-                        <div class="area-box">
-                            <i class="fa fa-money" aria-hidden="true"></i>
-                            <div class="area-box-info">
-                                <h4><a href="#url" class="title-head">
-                                        Investment Planning</a></h4>
+                    <div class="col-lg-4 col-md-6 featured-services__grid-item">
+                        <div class="featured-services__item">
+                            <i class="fa fa-money featured-services__item-icon" aria-hidden="true"></i>
+                            <div class="featured-services__item-info">
+                                <h4><a href="#url" class="featured-services__item-title">Investment Planning</a></h4>
                                 <p>Amus a ligula quam tesque et ut justo, Duis sed dolor et amet.</p>
                             </div>
                         </div>
                     </div>
 
-                    <div class="col-lg-4 col-md-6 grids-feature mt-md-0 mt-4">
-                        <div class="area-box">
-                            <i class="fa fa-file-text-o" aria-hidden="true"></i>
-                            <div class="area-box-info">
-                                <h4><a href="#url" class="title-head">
-                                        Commercial Projects</a></h4>
+                    <div class="col-lg-4 col-md-6 featured-services__grid-item mt-md-0 mt-4">
+                        <div class="featured-services__item">
+                            <i class="fa fa-file-text-o featured-services__item-icon" aria-hidden="true"></i>
+                            <div class="featured-services__item-info">
+                                <h4><a href="#url" class="featured-services__item-title">Commercial Projects</a></h4>
                                 <p>Amus a ligula quam tesque et ut justo, Duis sed dolor et amet.</p>
                             </div>
                         </div>
                     </div>
 
-                    <div class="col-lg-4 col-md-6 grids-feature mt-lg-0 mt-4">
-                        <div class="area-box">
-                            <i class="fa fa-building-o" aria-hidden="true"></i>
-                            <div class="area-box-info">
-                                <h4><a href="#url" class="title-head">
-                                        Banking &amp; Finance</a></h4>
+                    <div class="col-lg-4 col-md-6 featured-services__grid-item mt-lg-0 mt-4">
+                        <div class="featured-services__item">
+                            <i class="fa fa-building-o featured-services__item-icon" aria-hidden="true"></i>
+                            <div class="featured-services__item-info">
+                                <h4><a href="#url" class="featured-services__item-title">Banking & Finance</a></h4>
                                 <p>Amus a ligula quam tesque et ut justo, Duis sed dolor et amet.</p>
                             </div>
                         </div>
                     </div>
 
-                    <div class="col-lg-4 col-md-6 grids-feature mt-4">
-                        <div class="area-box">
-                            <i class="fa fa-clone" aria-hidden="true"></i>
-                            <div class="area-box-info">
-                                <h4><a href="#url" class="title-head">
-                                        Competitive Research</a></h4>
+                    <div class="col-lg-4 col-md-6 featured-services__grid-item mt-4">
+                        <div class="featured-services__item">
+                            <i class="fa fa-clone featured-services__item-icon" aria-hidden="true"></i>
+                            <div class="featured-services__item-info">
+                                <h4><a href="#url" class="featured-services__item-title">Competitive Research</a></h4>
                                 <p>Amus a ligula quam tesque et ut justo, Duis sed dolor et amet.</p>
                             </div>
                         </div>
                     </div>
 
-                    <div class="col-lg-4 col-md-6 grids-feature mt-4">
-                        <div class="area-box">
-                            <i class="fa fa-code" aria-hidden="true"></i>
-                            <div class="area-box-info">
-                                <h4><a href="#url" class="title-head">
-                                        International Business</a></h4>
+                    <div class="col-lg-4 col-md-6 featured-services__grid-item mt-4">
+                        <div class="featured-services__item">
+                            <i class="fa fa-code featured-services__item-icon" aria-hidden="true"></i>
+                            <div class="featured-services__item-info">
+                                <h4><a href="#url" class="featured-services__item-title">International Business</a></h4>
                                 <p>Amus a ligula quam tesque et ut justo, Duis sed dolor et amet.</p>
                             </div>
                         </div>
                     </div>
 
-                    <div class="col-lg-4 col-md-6 grids-feature mt-4">
-                        <div class="area-box">
-                            <i class="fa fa-bar-chart" aria-hidden="true"></i>
-                            <div class="area-box-info">
-                                <h4><a href="#url" class="title-head">
-                                        Strategic Approach</a></h4>
+                    <div class="col-lg-4 col-md-6 featured-services__grid-item mt-4">
+                        <div class="featured-services__item">
+                            <i class="fa fa-bar-chart featured-services__item-icon" aria-hidden="true"></i>
+                            <div class="featured-services__item-info">
+                                <h4><a href="#url" class="featured-services__item-title">Strategic Approach</a></h4>
                                 <p>Amus a ligula quam tesque et ut justo, Duis sed dolor et amet.</p>
                             </div>
                         </div>
@@ -186,23 +172,15 @@
         </div>
     </section>
 
-    <section>
-    </section>
     <!-- //ServicesPage Featured Services Section -->
 
-
     <!-- ServicesPage Contact Section -->
-    <section>
-    </section>
-
-    <section class="w3l-quote-6">
-        <div class="quote-info py-5">
+    <section class="contact">
+        <div class="contact__bg py-5">
             <style>
-                .quote-info {
+                .contact__bg {
                     background: url(https://wp.w3layouts.com/corpvision/wp-content/themes/corpvision/assets/images/bg1.jpg);
-                    background-repeat: no-repeat,
-                        no-repeat,
-                        no-repeat;
+                    background-repeat: no-repeat, no-repeat, no-repeat;
                     background-size: cover;
                     -webkit-background-size: cover;
                     -o-background-size: cover;
@@ -212,48 +190,56 @@
                     position: relative;
                 }
             </style>
-            <div class="container py-lg-5 py-md-4 py-2 ServicesPageContact">
-                <div class="quote-grids-info row align-items-center">
-                    <div class="quote-gd-left col-lg-6 pr-lg-5">
-                        <h6 class="title-small text-light mb-2">Innovative technology</h6>
-                        <h3 class="title-big text-white">We use latest technologies that are proven and practical</h3>
+            <div class="container py-lg-5 py-md-4 py-2">
+                <div class="contact__grid row align-items-center">
+                    <div class="col-lg-6 contact__info pr-lg-5">
+                        <h6 class="contact__subtitle text-light mb-2">Innovative technology</h6>
+                        <h3 class="contact__title text-white">We use latest technologies that are proven and practical
+                        </h3>
 
                         <div class="mt-4">
 
-                            <div class="quote-sec-info">
-                                <div class="appyl-sub-icon">
-                                    <span class="fa fa-map"></span>
+                            <div class="contact__info-item">
+                                <div class="contact__info-icon">
+                                    <span class="fa fa-map" style="
+                                    font-size: 40px;
+                                    color: var(--primary-color);
+                                    color: #fff;
+                                "></span>
                                 </div>
-                                <div class="appyl-sub-icon-info">
+                                <div class="contact__info-text">
                                     <h5>Our Location:</h5>
                                     <p>Corp Vision, 343 marketing, #21 cravel 1st lane street, NY - 62617.</p>
                                 </div>
                             </div>
 
-                            <div class="quote-sec-info">
-                                <div class="appyl-sub-icon">
-                                    <span class="fa fa-phone"></span>
+                            <div class="contact__info-item">
+                                <div class="contact__info-icon">
+                                    <span class="fa fa-phone" style="
+                                    font-size: 40px;
+                                    color: var(--primary-color);
+                                    color: #fff;
+                                "></span>
                                 </div>
-                                <div class="appyl-sub-icon-info">
+                                <div class="contact__info-text">
                                     <h5>Phone Numbers</h5>
-                                    <p><a href="tel:+142 5897555">
-                                            +142 5897555</a>,
-                                        <a href="tel:+142 5897566">
-                                            +142 5897566</a>
-                                    </p>
+                                    <p><a href="tel:+142 5897555">+142 5897555</a>, <a href="tel:+142 5897566">+142
+                                            5897566</a></p>
                                 </div>
                             </div>
 
-                            <div class="quote-sec-info">
-                                <div class="appyl-sub-icon">
-                                    <span class="fa fa-envelope-o"></span>
+                            <div class="contact__info-item2">
+                                <div class="contact__info-icon">
+                                    <span class="fa fa-envelope-o" style="
+                                    font-size: 40px;
+                                    color: var(--primary-color);
+                                    color: #fff;
+                                "></span>
                                 </div>
-                                <div class="appyl-sub-icon-info">
+                                <div class="contact__info-text">
                                     <h5>Email Addresses</h5>
-                                    <p><a href="mailto:mail@company1.com" class="mail">
-                                            mail@company1.com</a>,
-                                        <a href="mailto:mail@company2.com" class="mail">
-                                            mail@company2.com</a>
+                                    <p><a href="mailto:mail@company1.com" class="mail">mail@company1.com</a>,
+                                        <a href="mailto:mail@company2.com" class="mail">mail@company2.com</a>
                                     </p>
                                 </div>
                             </div>
@@ -262,27 +248,25 @@
 
                     </div>
 
-                    <div class="quote-gd-right col-lg-6 mt-lg-0 mt-5 ServicesPageContactForm">
-
-
-                        <div class="quote-form mx-auto">
-                            <form action="" method="post">
-                                <h3 class="title-service mb-2">Lets talk about your project</h3>
-                                <p class="mb-4">We have made it easy for clients to reach us and get their solutions
-                                    weaved</p>
+                    <div class="col-lg-6 mt-lg-0 mt-5">
+                        <div class="contact__form mx-auto">
+                            <form action="" method="post" class="contact__form-contact">
+                                <h3 class="contact__form-title mb-2">Lets talk about your project</h3>
+                                <p class="contact__form-description mb-4">We have made it easy for clients to reach us
+                                    and get their solutions weaved</p>
                                 <div class="form-group">
                                     <input type="text" class="form-control" name="w3lName" placeholder="Your Name*"
                                         required="">
                                 </div>
                                 <div class="form-group">
                                     <input type="email" class="form-control" name="w3lSender" placeholder="Email*"
-                                        equired="">
+                                        required="">
                                 </div>
                                 <div class="form-group mb-4">
                                     <textarea class="form-control" name="w3lMessage" placeholder="Message"></textarea>
                                 </div>
-                                <button type="submit" class="btn btn-style btn-primary d-block submit">
-                                    Get Started</button>
+                                <button type="submit" class="btn btn-style btn-primary d-block submit">Get
+                                    Started</button>
                             </form>
                         </div>
                     </div>
@@ -292,59 +276,55 @@
         </div>
     </section>
 
-    <section>
-    </section>
     <!-- //ServicesPage Contact Section -->
 
-
-
     <!-- ServicesPage More Services Section -->
-    <section>
-    </section>
-
-    <section class="w3l-features py-5" id="work">
-        <div class="container py-lg-5 py-md-4 py-2 ServicesPageMoreServices">
+    <section class="more-services py-5" id="work">
+        <div class="container py-lg-5 py-md-4 py-2">
             <div class="title-content text-center mb-md-5 mb-4">
                 <h3 class="title-small">Beautifully crafted creative solutions</h3>
                 <h3 class="title-big mx-lg-5">Services that create identities, build brands, and get results</h3>
             </div>
-            <div class="row main-cont-wthree-2 align-items-center justify-content-center">
+            <div class="row more-services__grid align-items-center justify-content-center">
 
                 <div class="col-lg-4 col-md-6">
-                    <div class="grids-1 box-wrap">
-                        <div class="icon">
+                    <div class="more-services__item">
+                        <div class="more-services__item-icon">
                             <img src="https://wp.w3layouts.com/corpvision/wp-content/themes/corpvision/assets/images/icon1.png"
                                 alt="" class="img-fluid">
                         </div>
-                        <h4><a href="#url" class="title-head mb-3">
+                        <h4><a href="#url" class="more-services__item-title mb-3">
                                 Business Analysis</a></h4>
-                        <p class="text-para">Venenatis eros et, sed commodo risus. Nullam sit amet laoreet elit, dolor
+                        <p class="more-services__item-description">Venenatis eros et, sed commodo risus. Nullam sit amet
+                            laoreet elit, dolor
                             eget ex fermentum. </p>
                     </div>
                 </div>
 
                 <div class="col-lg-4 col-md-6 mt-md-0 mt-4">
-                    <div class="grids-1 box-wrap">
-                        <div class="icon">
+                    <div class="more-services__item">
+                        <div class="more-services__item-icon">
                             <img src="https://wp.w3layouts.com/corpvision/wp-content/themes/corpvision/assets/images/icon2.png"
                                 alt="" class="img-fluid">
                         </div>
-                        <h4><a href="#url" class="title-head mb-3">
+                        <h4><a href="#url" class="more-services__item-title mb-3">
                                 Project Reporting</a></h4>
-                        <p class="text-para">Venenatis eros et, sed commodo risus. Nullam sit amet laoreet elit, dolor
+                        <p class="more-services__item-description">Venenatis eros et, sed commodo risus. Nullam sit amet
+                            laoreet elit, dolor
                             eget ex fermentum.</p>
                     </div>
                 </div>
 
                 <div class="col-lg-4 col-md-6 mt-lg-0 mt-4">
-                    <div class="grids-1 box-wrap">
-                        <div class="icon">
+                    <div class="more-services__item">
+                        <div class="more-services__item-icon">
                             <img src="https://wp.w3layouts.com/corpvision/wp-content/themes/corpvision/assets/images/icon3.png"
                                 alt="" class="img-fluid">
                         </div>
-                        <h4><a href="#url" class="title-head mb-3">
+                        <h4><a href="#url" class="more-services__item-title mb-3">
                                 Security Enhanced</a></h4>
-                        <p class="text-para">Venenatis eros et, sed commodo risus. Nullam sit amet laoreet elit, dolor
+                        <p class="more-services__item-description">Venenatis eros et, sed commodo risus. Nullam sit amet
+                            laoreet elit, dolor
                             eget ex fermentum. </p>
                     </div>
                 </div>
@@ -352,146 +332,16 @@
             </div>
         </div>
     </section>
-
-    <section>
-    </section>
     <!-- //ServicesPage More Services Section -->
-
-
-
-
-
-
-    <footer class="w3l-footer-29-main">
-        <div class="footer-29 py-5">
-            <div class="container py-md-4 CorpVisionFooter">
-
-                <div class="row footer-top-29">
-
-                    <div class="col-lg-4 col-md-6 footer-list-29 footer-1">
-
-                        <div class="footer-logo mb-4">
-                            <a class="navbar-brand" href="https://wp.w3layouts.com/corpvision/">
-                                <span class="fa fa-align-right"></span>
-                                Corp Vision
-                                <span class="logo">Vision to your Future</span></a>
-                        </div>
-
-                        <p>Lorem ipsum viverra feugiat. Pellen tesque libero ut justo, ultrices in ligula. Semper at
-                            tempufddfel. Lorem ipsum dolor sit amet Semper at elit team advisors.</p>
-
-                        <div class="main-social-footer-29 mt-md-4 mt-3">
-                            <a href="https://www.facebook.com/w3layouts/" class="facebook"><span
-                                    class="fa fa-facebook"></span></a>
-
-                            <a href="https://twitter.com/W3layouts" class="twitter"><span
-                                    class="fa fa-twitter"></span></a>
-
-                            <a href="https://instagram.com/company/w3layouts" class="instagram"><span
-                                    class="fa fa-instagram"></span></a>
-
-                            <a href="https://in.linkedin.com/company/w3layouts" class="linkedin"><span
-                                    class="fa fa-linkedin"></span></a>
-                        </div>
-
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 footer-list-29 footer-1 pr-lg-5 mt-md-0 mt-5">
-                        <h6 class="footer-title-29">Contact Info </h6>
-
-                        <p class="mb-2">
-                            Address : Corp Vision, 343 marketing, #21 cravel 1st lane street, NY - 62617. </p>
-
-                        <p class="mb-2">Phone Number : <a href="tel:+1(21) 234 4567">
-                                +1(21) 234 4567</a></p>
-
-                        <p class="mb-2">Email : <a href="mailto:info@example.com">
-                                info@example.com</a></p>
-
-                        <p class="mb-2">Support : <a href="mailto:info@support.com">
-                                info@support.com</a></p>
-
-                    </div>
-
-                    <div class="col-lg-2 col-md-6 col-sm-5 col-6 footer-list-29 footer-2 mt-lg-0 mt-5">
-                        <div id="categories-4" class="widget_categories">
-                            <h6 class="footer-title-29">Categories</h6>
-                            <ul>
-                                <li class="cat-item cat-item-2"><a
-                                        href="https://wp.w3layouts.com/corpvision/category/marketing-strategy/">Marketing
-                                        Strategy</a>
-                                </li>
-                                <li class="cat-item cat-item-3"><a
-                                        href="https://wp.w3layouts.com/corpvision/category/startup-business/">Startup
-                                        Business</a>
-                                </li>
-                                <li class="cat-item cat-item-4"><a
-                                        href="https://wp.w3layouts.com/corpvision/category/web-development/">Web
-                                        development</a>
-                                </li>
-                            </ul>
-
-                        </div>
-                    </div>
-
-                    <div class="col-lg-2 col-md-6 col-sm-5 col-6 footer-list-29 footer-2 mt-lg-0 mt-5">
-                        <div id="meta-4" class="widget_meta">
-                            <h6 class="footer-title-29">Meta</h6>
-                            <ul>
-                                <li><a href="https://wp.w3layouts.com/corpvision/wp-login.php">Log in</a></li>
-                                <li><a href="https://wp.w3layouts.com/corpvision/feed/">Entries feed</a></li>
-                                <li><a href="https://wp.w3layouts.com/corpvision/comments/feed/">Comments feed</a></li>
-
-                                <li><a href="https://wordpress.org/">WordPress.org</a></li>
-                            </ul>
-
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-        <!-- copyright -->
-        <section class="w3l-copyright text-center">
-            <div class="container">
-                <p class="CopyRights copy-footer-29">© 2025 Corp Vision All Rights Reserved |
-                    WordPress Theme by <a href="https://w3layouts.com/">
-                        W3Layouts. </a>
-                </p>
-            </div>
-            <button onclick="topFunction()" id="movetop" title="Go to top" style="display: none;">
-                <span class="fa fa-angle-up">
-                </span></button>
-        </section>
-        <!-- //copyright -->
-    </footer>
-
-
-
-
-
+    <div id="footer-container"></div> <!-- Placeholder for footer -->
     <!-- move top -->
     <script>
-        // When the user scrolls down 20px from the top of the document, show the button
-        window.onscroll = function () {
-            scrollFunction()
-        };
-
-        function scrollFunction() {
-            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                document.getElementById("movetop").style.display = "block";
-            } else {
-                document.getElementById("movetop").style.display = "none";
-            }
-        }
-
-        // When the user clicks on the button, scroll to the top of the document
-        function topFunction() {
-            document.body.scrollTop = 0;
-            document.documentElement.scrollTop = 0;
-        }
+        fetch('../../partials/footer.html')
+            .then(response => response.text())
+            .then(footerHTML => {
+                document.getElementById('footer-container').innerHTML = footerHTML;
+            });
     </script>
-    <!-- /move top -->
 
 
     <!-- Template JavaScript -->
@@ -535,124 +385,10 @@
     <!-- magnific popup -->
     <script
         src="https://wp.w3layouts.com/corpvision/wp-content/themes/corpvision/assets/js/jquery.magnific-popup.min.js"></script>
-    <script>
-        $(document).ready(function () {
-            $('.popup-with-zoom-anim').magnificPopup({
-                type: 'inline',
 
-                fixedContentPos: false,
-                fixedBgPos: true,
-
-                overflowY: 'auto',
-
-                closeBtnInside: true,
-                preloader: false,
-
-                midClick: true,
-                removalDelay: 300,
-                mainClass: 'my-mfp-zoom-in'
-            });
-
-            $('.popup-with-move-anim').magnificPopup({
-                type: 'inline',
-
-                fixedContentPos: false,
-                fixedBgPos: true,
-
-                overflowY: 'auto',
-
-                closeBtnInside: true,
-                preloader: false,
-
-                midClick: true,
-                removalDelay: 300,
-                mainClass: 'my-mfp-slide-bottom'
-            });
-        });
-    </script>
-    <!-- //magnific popup -->
 
     <!-- script for tesimonials carousel slider -->
     <script src="https://wp.w3layouts.com/corpvision/wp-content/themes/corpvision/assets/js/owl.carousel.js"></script>
-
-    <script>
-        $(document).ready(function () {
-            $("#owl-demo1").owlCarousel({
-                loop: true,
-                margin: 20,
-                nav: false,
-                responsiveClass: true,
-                responsive: {
-                    0: {
-                        items: 1,
-                        nav: false
-                    },
-                    768: {
-                        items: 1,
-                        nav: false
-                    },
-                    1000: {
-                        items: 1,
-                        nav: false,
-                        loop: false
-                    }
-                }
-            })
-        })
-    </script>
-    <!-- //script for tesimonials carousel slider -->
-
-    <!-- disable body scroll which navbar is in active -->
-    <script>
-        $(function () {
-            $('.navbar-toggler').click(function () {
-                $('body').toggleClass('noscroll');
-            })
-        });
-    </script>
-    <!-- disable body scroll which navbar is in active -->
-
-    <!--/MENU-JS-->
-    <script>
-        $(window).on("scroll", function () {
-            var scroll = $(window).scrollTop();
-
-            if (scroll >= 80) {
-                $("#site-header").addClass("nav-fixed");
-            } else {
-                $("#site-header").removeClass("nav-fixed");
-            }
-        });
-
-        //Main navigation Active Class Add Remove
-        $(".navbar-toggler").on("click", function () {
-            $("header").toggleClass("active");
-        });
-        $(document).on("ready", function () {
-            if ($(window).width() > 991) {
-                $("header").removeClass("active");
-            }
-            $(window).on("resize", function () {
-                if ($(window).width() > 991) {
-                    $("header").removeClass("active");
-                }
-            });
-        });
-    </script>
-    <!--//MENU-JS-->
-
-    <!-- Search -->
-    <script>
-        $('.control').click(function () {
-            $('body').addClass('search-active');
-            $('.input-search').focus();
-        });
-
-        $('.icon-close').click(function () {
-            $('body').removeClass('search-active');
-        });
-    </script>
-    <!-- //Search -->
 
     <script src="https://wp.w3layouts.com/corpvision/wp-content/themes/corpvision/assets/js/bootstrap.min.js"></script>
 
@@ -686,12 +422,10 @@
     <!-- Owl Carousel JS CDN -->
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <!-- Slick Carousel JS CDN -->
-
-    <script src="../../js/main.js"></script> <!-- Main JS Local -->
-    <script src="../../js/banner-animations.js"></script> <!-- Banner Animation JS Local -->
-    <link rel="stylesheet" href="service.css"/>
+    <!-- Main JS Local -->
+    <script src="../../js/main.js"></script>
+    <link rel="stylesheet" href="service.css" />
 
 </body>
-
 
 </html>

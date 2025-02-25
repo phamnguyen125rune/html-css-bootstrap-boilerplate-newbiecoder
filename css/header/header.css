@@ -29,7 +29,7 @@ header.nav-fixed {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  padding: 0; /* Combined duplicate rules */
+  padding: 0; 
 }
 
 nav {
