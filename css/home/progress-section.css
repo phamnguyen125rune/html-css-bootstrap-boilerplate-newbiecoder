@@ -1,0 +1,217 @@
+.progress-section .progress-section__info {
+    margin-bottom: 30px;
+    text-align: left;
+    position: relative;
+}
+
+.progress-section .progress-section__info--1 h6.progress-section__title {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    width: 80%;
+}
+
+.progress-section h6.progress-section__title {
+    font-size: 18px;
+    color: var(--heading-color);
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+
+.progress-section .progress {
+    display: flex;
+    height: 4px;
+    overflow: hidden;
+    font-size: 0.75rem;
+    background-color: var(--bg-grey);
+    border-radius: 0.25rem;
+}
+
+.progress-bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    background-color: #00a63f;
+    transition: width 0.6s ease;
+}
+
+.progress-section .progress-bar {
+    background-color: var(--primary-color);
+    transition: width 0.6s ease;
+}
+
+.progress-section .progress-bar-striped {
+    background-image: none;
+    background-size: cover;
+}
+
+.progress-section .progress-bar--gradient-1 {
+    color: #61fded;
+    background-color: #0d8abc;
+    background-image: linear-gradient(-224deg, #0d8abc, #61fded);
+}
+
+.progress-section .progress-bar--gradient-1:before,
+.progress-section .progress-bar--gradient-2:before,
+.progress-section .progress-bar--gradient-3:before,
+.progress-section .progress-bar--gradient-4:before {
+    height: 28px;
+    width: 28px;
+    border: 1px solid;
+    opacity: .3;
+}
+
+.progress-section .progress-bar--gradient-1:after,
+.progress-section .progress-bar--gradient-1:before {
+    content: "";
+    position: absolute;
+    right: 20%;
+    top: 90%;
+    border-radius: 50%;
+    transform: translate(50%, -50%);
+}
+
+.progress-section .progress-bar--gradient-1:after,
+.progress-section .progress-bar--gradient-2:after,
+.progress-section .progress-bar--gradient-3:after,
+.progress-section .progress-bar--gradient-4:after {
+    height: 13px;
+    width: 13px;
+    border: 3px solid;
+    background-color: var(--bg-color);
+}
+
+.progress-section .progress-bar--gradient-2 {
+    color: #eece90;
+    background-color: #d45529;
+    background-image: linear-gradient(-224deg, #d45529, #eece90);
+}
+
+.progress-section .progress-bar--gradient-2:after,
+.progress-section .progress-bar--gradient-2:before {
+    content: "";
+    position: absolute;
+    right: 5%;
+    top: 90%;
+    border-radius: 50%;
+    transform: translate(50%, -50%);
+}
+
+.progress-section .progress-bar--gradient-1:before,
+.progress-section .progress-bar--gradient-2:before,
+.progress-section .progress-bar--gradient-3:before,
+.progress-section .progress-bar--gradient-4:before {
+    height: 28px;
+    width: 28px;
+    border: 1px solid;
+    opacity: .3;
+}
+
+.progress-section .progress-bar--gradient-2:after,
+.progress-section .progress-bar--gradient-2:before {
+    content: "";
+    position: absolute;
+    right: 5%;
+    top: 90%;
+    border-radius: 50%;
+    transform: translate(50%, -50%);
+}
+.progress-section .progress-bar--gradient-1:after,
+.progress-section .progress-bar--gradient-2:after,
+.progress-section .progress-bar--gradient-3:after,
+.progress-section .progress-bar--gradient-4:after {
+    height: 13px;
+    width: 13px;
+    border: 3px solid;
+    background-color: var(--bg-color);
+}
+
+.progress-section .progress-bar--gradient-3 {
+    color: #5c51ff;
+    background-color: #f646a9;
+    background-image: linear-gradient(-224deg, #f646a9, #5c51ff);
+}
+
+.progress-section .progress-bar--gradient-3:after,
+.progress-section .progress-bar--gradient-3:before {
+    content: "";
+    position: absolute;
+    right: 40%;
+    top: 90%;
+    border-radius: 50%;
+    transform: translate(50%, -50%);
+}
+.progress-section .progress-bar--gradient-1:before,
+.progress-section .progress-bar--gradient-2:before,
+.progress-section .progress-bar--gradient-3:before,
+.progress-section .progress-bar--gradient-4:before {
+    height: 28px;
+    width: 28px;
+    border: 1px solid;
+    opacity: .3;
+}
+
+.progress-section .progress-bar--gradient-3:after,
+.progress-section .progress-bar--gradient-3:before {
+    content: "";
+    position: absolute;
+    right: 40%;
+    top: 90%;
+    border-radius: 50%;
+    transform: translate(50%, -50%);
+}
+.progress-section .progress-bar--gradient-1:after,
+.progress-section .progress-bar--gradient-2:after,
+.progress-section .progress-bar--gradient-3:after,
+.progress-section .progress-bar--gradient-4:after {
+    height: 13px;
+    width: 13px;
+    border: 3px solid;
+    background-color: var(--bg-color);
+}
+
+.progress-section .progress-bar--gradient-4 {
+    color: #e5529a;
+    background-color: #e77654;
+    background-image: linear-gradient(-224deg, #e77654, #e5529a);
+}
+
+.progress-section .progress-bar--gradient-4:after,
+.progress-section .progress-bar--gradient-4:before {
+    content: "";
+    position: absolute;
+    right: 15%;
+    top: 90%;
+    border-radius: 50%;
+    transform: translate(50%, -50%);
+}
+.progress-section .progress-bar--gradient-1:before,
+.progress-section .progress-bar--gradient-2:before,
+.progress-section .progress-bar--gradient-3:before,
+.progress-section .progress-bar--gradient-4:before {
+    height: 28px;
+    width: 28px;
+    border: 1px solid;
+    opacity: .3;
+}
+.progress-section .progress-bar--gradient-4:after,
+.progress-section .progress-bar--gradient-4:before {
+    content: "";
+    position: absolute;
+    right: 15%;
+    top: 90%;
+    border-radius: 50%;
+    transform: translate(50%, -50%);
+}
+.progress-section .progress-bar--gradient-1:after,
+.progress-section .progress-bar--gradient-2:after,
+.progress-section .progress-bar--gradient-3:after,
+.progress-section .progress-bar--gradient-4:after {
+    height: 13px;
+    width: 13px;
+    border: 3px solid;
+    background-color: var(--bg-color);
+}

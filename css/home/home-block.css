@@ -1,0 +1,59 @@
+.about-section__service-list{
+    margin-top: 1.5rem !important;
+}
+
+.about-section ul.about-section__service-list li.about-section__service-item {
+    display: block;
+    margin-bottom: 15px;
+}
+
+.about-section ul.about-section__service-list li.about-section__service-item a span.about-section__service-icon {
+    color: var(--primary-color);
+    margin-right: 5px;
+    opacity: .8;
+}
+
+.about-section ul.about-section__service-list li.about-section__service-item a {
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 600;
+    color: var(--heading-color);
+    position: relative;
+}
+
+.title {
+    font-size: 19px;
+    line-height: 28px;
+    font-weight: 600;
+    color: var(--heading-color);
+    text-align: center;
+    background: var(--bg-color);
+    padding: 12px 35px;
+    display: inline-block;
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    transform: translateY(-25px);
+    box-shadow: rgba(1, 1, 1, 0.05) 1px 1px 5px 0px;
+}
+
+.title:hover {
+    color: var(--primary-color); 
+}
+
+.img-fluid{
+    border-radius: var(--border-radius);
+}
+
+.btn-style1 {
+    padding: 8px 35px;
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 600;
+    transition: 0.3s ease-in;
+    color: var(--heading-color);
+    border-radius: var(--border-radius);
+}
+
+.btn-style1:hover {
+    color: var(--primary-color); 
+}

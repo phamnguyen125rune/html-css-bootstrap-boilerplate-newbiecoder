@@ -1,0 +1,124 @@
+.blog-section {
+    background: var(--bg-lightgrey);
+}
+
+.blog-section__item {
+    margin-bottom: 30px;
+}
+
+.blog-section__card {
+    border: none;
+    border-radius: 0;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.05);
+}
+
+.blog-section__card-header {
+    padding: 0;
+    position: relative;
+    border-bottom: none;
+    border-radius: 0;
+    overflow: hidden;
+}
+
+.blog-section__zoom {
+    display: block;
+    overflow: hidden;
+}
+
+.blog-section__zoom img {
+    transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.blog-section__zoom:hover img {
+    transform: scale(1.1);
+    filter: brightness(0.7);
+}
+
+.blog-section__post-thumbnail {
+    overflow: hidden;
+}
+
+.blog-section__card-body {
+    padding: 1.5rem;
+}
+
+.blog-details {}
+
+.blog-section__price-review {
+    margin-bottom: 1rem;
+}
+
+.blog-section__price-review p {
+    margin-bottom: 0;
+    font-size: 0.9rem;
+    color: var(--secondary-color);
+}
+
+.blog-section__price-review a {
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
+.blog-section__desc {
+    display: block;
+    font-size: 1.25rem;
+    line-height: 1.4;
+    color: var(--heading-color);
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.blog-section__desc:hover {
+    color: var(--primary-color);
+}
+
+.blog-section__card-footer {
+    padding: 1rem 1.5rem;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: transparent;
+}
+
+.blog-section__author {
+    display: flex;
+    align-items: center;
+}
+
+.blog-section__post-author {
+    margin-right: 10px;
+    display: block;
+}
+
+.blog-section__post-author img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.blog-section__meta {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 0.9rem;
+    color: var(--text-muted);
+}
+
+.blog-section__meta-value {
+    margin-right: 5px;
+    font-weight: 600;
+    color: var(--heading-color);
+}
+
+.blog-section__meta a {
+    color: var(--text-muted);
+    text-decoration: none;
+}
+
+.blog-section__date {
+    margin-left: auto;
+    font-size: 0.9rem;
+    color: var(--text-muted);
+}
