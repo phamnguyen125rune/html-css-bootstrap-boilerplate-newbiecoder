@@ -1,40 +1,74 @@
-.w3l-project {
-    background-image: url(../assets/img/map.png);
+.newsletter-section {
+    background-image: url(https://wp.w3layouts.com/corpvision/wp-content/themes/corpvision/assets/images/map.png);
     background-color: #151421;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
 }
-.w3l-project h3.title-big {
+.newsletter-section h3.title-big {
     color: #fff;
 }
 
-.w3l-project p {
+.newsletter-section p {
     color: #eee;
 }
 
-.w3l-footer-29-main {
+.bottom-info {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+form.subscribe {
+    display: grid;
+    grid-template-columns: 50px 1fr auto;
+    max-width: 550px;
+    margin: auto;
+}
+
+.subscribe .input-group-text {
+    color: #999;
+    background-color: rgba(0, 0, 0, 0.25);
+    border-color: rgba(255, 255, 255, 0.15);
+    padding: 0 15px;
+}
+
+.subscribe input[type="email"] {
+    padding: 14px 20px;
+    font-size: 16px;
+    line-height: 28px;
+    border: 1px solid var(--border-color-light);
+    background-color: rgba(0, 0, 0, 0.2);
+    border-color: rgba(255, 255, 255, 0.15);
+    border-left: none;
+}
+
+.subscribe button.btn {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    padding: 0 25px;
+}
+
+.footer {
     background: #151421;
     border-top: 1px solid rgba(249, 249, 249, 0.1);
 }
 
-.w3l-footer-29-main .navbar-brand span.fa {
+.footer .navbar-brand span.fa {
     color: var(--primary-color);
     margin-right: 5px;
     vertical-align: bottom;
 }
 
-.w3l-footer-29-main .navbar-brand {
+.footer .navbar-brand {
     margin: 0;
     padding: 0;
     font-size: 30px;
     font-weight: 600;
-    text-transform: capitalize;
     color: #fff;
     opacity: 1;
 }
 
-.w3l-footer-29-main .navbar-brand span.logo {
+.footer .navbar-brand span.logo {
     text-transform: none;
     display: block;
     font-size: 14px;
@@ -42,14 +76,14 @@
     font-weight: 600;
     opacity: .9;
 }
-.w3l-footer-29-main p {
+.footer p {
     font-size: 18px;
     line-height: 28px;
     color: #97a1a9;
 }
 
 
-.main-social-footer-29 a {
+.main-social-footer-main a {
     margin-right: 15px;
     display: inline-block;
     text-align: center;
@@ -61,7 +95,7 @@
     opacity: .6;
 }
 
-.w3l-footer-29-main h6.footer-title-29 {
+.footer h6.footer-title {
     font-size: 22px;
     line-height: 28px;
     margin-bottom: 25px;
@@ -72,23 +106,26 @@
     letter-spacing: .5px;
 }
 
-.w3l-footer-29-main .footer-list-29 ul li a, .w3l-footer-29-main .footer-list-29 ul li p, .w3l-copyright .footer-list-29 ul li a, .w3l-footer-29-main a {
+.footer .footer-list ul li a, .footer .footer-list ul li p, .w3l-copyright .footer-list ul li a, .footer a {
     font-size: 18px;
     line-height: 28px;
     color: #97a1a9;
     opacity: .8;
 }
 
-.w3l-footer-29-main .footer-list-29 ul li, .w3l-footer-29-main .midd-footer-29:nth-child(1) .footer-list-29 ul li:last-child {
+.footer .footer-list ul li, .footer .midd-footer-main:nth-child(1) .footer-list ul li:last-child {
     list-style: none;
     margin-bottom: 10px;
 }
 
 
 .w3l-copyright {
+    background: #151421;
     padding: 1.5em 0;
     border-top: 1px solid rgba(249, 249, 249, 0.1);
 }
+
+
 
 .w3l-copyright #movetop {
     display: none;
@@ -107,17 +144,18 @@
     padding: 0;
     line-height: 36px;
     border-radius: 35px;
-    transition: 0.3sease-out;
+    transition: 0.3s ease-out;
 }
 
-.w3l-copyright p.copy-footer-29 {
+.w3l-copyright p.copy-footer-main {
     align-self: center;
     color: #7f8a94;
     font-size: 17px;
     letter-spacing: .5px;
     opacity: 1;
+    margin-bottom: 0em;
 }
 
-.w3l-copyright .copy-footer-29 a {
+.w3l-copyright .copy-footer-main a {
     color: var(--primary-color);
 }

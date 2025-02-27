@@ -9,6 +9,15 @@
     border-bottom-right-radius: 0;
     border-bottom-left-radius: 0;
 }
+
+.gallery-section__title {
+    font-size: 24px;
+    font-weight: 600;
+    color: #fff;
+    display: block;
+    margin-bottom: 10px;
+}
+
 .gallery-section .gallery-section__overlay { 
     position: absolute;
     top: 0;

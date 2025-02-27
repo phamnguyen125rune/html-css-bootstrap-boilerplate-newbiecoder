@@ -1,5 +1,4 @@
 .blog-section {
-    background: var(--bg-lightgrey);
 }
 
 .blog-section__item {
@@ -58,18 +57,23 @@
 }
 
 .blog-section__price-review a {
-    color: var(--secondary-color);
-    text-decoration: none;
+    font-weight: 400;
+    font-size: 17px;
+    color: #999;
 }
 
 .blog-section__desc {
-    display: block;
     font-size: 1.25rem;
     line-height: 1.4;
     color: var(--heading-color);
     font-weight: 600;
-    text-decoration: none;
-    transition: color 0.3s ease-in-out;
+
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    min-height: 2.8em;
+
 }
 
 .blog-section__desc:hover {
@@ -107,14 +111,21 @@
 }
 
 .blog-section__meta-value {
-    margin-right: 5px;
+    color: var(--font-color);
+    font-size: 15px;
     font-weight: 600;
-    color: var(--heading-color);
+    opacity: .6;
 }
 
 .blog-section__meta a {
-    color: var(--text-muted);
+    margin-right: 5px;
+    font-weight: 600;
+    color: var(--heading-color);
     text-decoration: none;
+}
+
+.blog-section__meta a:hover {
+    color: var(--primary-color);
 }
 
 .blog-section__date {

@@ -56,3 +56,14 @@
     margin-bottom: 0;
     opacity: 0.8;
 }
+
+.owl-stage-inner{
+    transform: translate3d(0px, 0px, 0px); 
+    transition: all; 
+    width: 3800px;
+}
+
+.owl-item{
+    width: 930px;
+    margin-right: 20px;
+}

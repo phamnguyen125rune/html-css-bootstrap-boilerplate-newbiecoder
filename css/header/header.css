@@ -23,7 +23,7 @@ nav {
 
 .navbar .navbar-brand {
   margin: 0;
-  font-size: 32px;
+  font-size: 30px;
   font-weight: 600;
   text-transform: capitalize;
   display: inline-block;
@@ -178,7 +178,7 @@ button.navbar-toggler.collapsed .icon-close {
 
 
 .control .btn-material {
-  line-height: 41px;
+  line-height: 45px;
   text-align: center;
   width: 45px;
   height: 45px;
